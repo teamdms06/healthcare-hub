@@ -67,7 +67,7 @@ const Company = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">About The-Connections</h1>
           <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90">
-            Quality & Value Delivered, Together - Your trusted partner in healthcare excellence since 2008
+            Quality & Value Delivered, Together - Your trusted partner in healthcare excellence since 2011
           </p>
         </div>
       </section>

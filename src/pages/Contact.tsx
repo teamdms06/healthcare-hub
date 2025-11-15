@@ -137,13 +137,9 @@ const Contact = () => {
                           <p className="text-xs text-muted-foreground">Karnataka, India</p>
                         </div>
                         <div>
-                          <p className="font-semibold text-primary text-sm">Gujrat Office</p>
-                          <p className="text-xs text-muted-foreground">Ahmedabad, India</p>
-                        </div>
-                        <div>
-                          <p className="font-semibold text-primary text-sm">USA Office</p>
-                          <p className="text-xs text-muted-foreground">Irvine, USA</p>
-                        </div>                        
+                          <p className="font-semibold text-primary text-sm">Ahmedabad Office</p>
+                          <p className="text-xs text-muted-foreground">Gujrat, India</p>
+                        </div>                       
                       </div>
                     </div>
                   </div>
@@ -175,7 +171,7 @@ const Contact = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 contact-page text-accent-foreground">
+      {/* <section className="py-20 contact-page text-accent-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
@@ -185,7 +181,7 @@ const Contact = () => {
             <a href="tel:+917887898196">Call Us Now</a>
           </Button>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

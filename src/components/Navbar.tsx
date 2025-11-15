@@ -146,7 +146,7 @@ const Navbar = () => {
                       </Link>
                     </NavigationMenuTrigger>
                     <NavigationMenuContent className="left-0">
-                      <div className="flex w-[1100px] h-[380px]">
+                      <div className="flex w-[1375px] h-[380px]">
                         {/* Consulting & Support */}
                         <div className="flex-1 p-5 border-r border-border">
                           <div className="relative h-32 overflow-hidden rounded-md mb-3 group">
@@ -226,7 +226,7 @@ const Navbar = () => {
                         </div>
 
                         {/* Analytics & Operations */}
-                        <div className="flex-1 p-5">
+                        <div className="flex-1 p-5 border-r border-border">
                           <div className="relative h-32 overflow-hidden rounded-md mb-3 group">
                             <img
                               src={analyticsImg}
@@ -248,6 +248,56 @@ const Navbar = () => {
                                 <div className="h-px w-full bg-gradient-to-r from-border from-0% via-border via-85% to-transparent to-100%" />
                               </div>
                             ))}
+                          </div>
+                        </div>
+
+                        {/* Healthcare Services */}
+                        <div className="flex-1 p-5">
+                          <div className="relative h-32 overflow-hidden rounded-md mb-3 group">
+                            <img
+                              src={medicalBillingImg}
+                              alt="Healthcare Services"
+                              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                            />
+                            <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                          </div>
+                          <h4 className="font-bold text-base text-foreground mb-3">Healthcare Services</h4>
+                          <div className="space-y-0">
+                            <div className="relative">
+                              <Link
+                                to="/services/medical-coding"
+                                className="block py-2 text-base font-semibold text-muted-foreground hover:text-accent transition-colors"
+                              >
+                                Medical Coding
+                              </Link>
+                              <div className="h-px w-full bg-gradient-to-r from-border from-0% via-border via-85% to-transparent to-100%" />
+                            </div>
+                            <div className="relative">
+                              <Link
+                                to="/services/medical-billing"
+                                className="block py-2 text-base font-semibold text-muted-foreground hover:text-accent transition-colors"
+                              >
+                                Medical Billing
+                              </Link>
+                              <div className="h-px w-full bg-gradient-to-r from-border from-0% via-border via-85% to-transparent to-100%" />
+                            </div>
+                            <div className="relative">
+                              <Link
+                                to="/services/credentialing"
+                                className="block py-2 text-base font-semibold text-muted-foreground hover:text-accent transition-colors"
+                              >
+                                Credentialing
+                              </Link>
+                              <div className="h-px w-full bg-gradient-to-r from-border from-0% via-border via-85% to-transparent to-100%" />
+                            </div>
+                            <div className="relative">
+                              <Link
+                                to="/healthcare-services"
+                                className="block py-2 text-base font-semibold text-primary hover:text-accent transition-colors"
+                              >
+                                View All →
+                              </Link>
+                            </div>
                           </div>
                         </div>
                       </div>

@@ -81,12 +81,6 @@ const BPOServices = () => {
                   <p className="text-muted-foreground mb-4 leading-relaxed">
                     {service.description}
                   </p>
-                  <Button variant="link" className="p-0 h-auto font-semibold group-hover:text-accent" asChild>
-                    <Link to={service.link}>
-                      Learn More
-                      <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-2 transition-transform" />
-                    </Link>
-                  </Button>
                 </CardContent>
               </Card>
             );
@@ -95,7 +89,7 @@ const BPOServices = () => {
 
         <div className="text-center mt-12">
           <Button variant="hero" size="lg" asChild>
-            <Link to="/bpo-services">View All BPO Services</Link>
+            <Link to="/industries">View All BPO Services</Link>
           </Button>
         </div>
       </div>
