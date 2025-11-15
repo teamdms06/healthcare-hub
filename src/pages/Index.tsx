@@ -82,7 +82,7 @@ const Index = () => {
             {[
               {
                 title: "Proven Track Record",
-                description: "15+ years of experience serving healthcare providers with exceptional results",
+                description: "13+ years of experience serving healthcare providers with exceptional results",
               },
               {
                 title: "Advanced Technology",

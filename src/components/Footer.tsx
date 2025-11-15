@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -57,7 +57,39 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* BPO Services */}
+          <div>
+            <h3 className="font-bold text-lg mb-4">BPO Services</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/services/customer-care" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  Customer Care 24x7
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/omnichannel-communication" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  Omnichannel Communication
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/client-strategies" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  Client Strategy & Consulting
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/database-analytics" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  Database Analytics
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/contact-centre" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  Contact Centre Operations
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Healthcare Services */}
           <div>
             <h3 className="font-bold text-lg mb-4">Healthcare Services</h3>
             <ul className="space-y-2">
@@ -72,13 +104,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/services/patient-support" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  Patient Support
+                <Link to="/services/credentialing" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  Credentialing
                 </Link>
               </li>
               <li>
-                <Link to="/services/data-management" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  Data Management
+                <Link to="/services/patient-support" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  Patient Support
                 </Link>
               </li>
               <li>
@@ -96,7 +128,7 @@ const Footer = () => {
               <li className="flex items-start gap-2">
                 <MapPin className="h-5 w-5 mt-1 flex-shrink-0 text-accent" />
                 <span className="text-primary-foreground/80">
-                  Pune, Bangalore,  Ahmedabad, India
+                  Pune, Bangalore,  Gujrat, India
                 </span>
               </li>
               <li className="flex items-center gap-2">
