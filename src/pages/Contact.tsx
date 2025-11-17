@@ -29,58 +29,75 @@ const Contact = () => {
             <Card>
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-primary mb-6">Reach the Experts</h2>
-                <form className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium mb-2">First Name</label>
-                      <Input placeholder="John" />
+                  <form 
+                    className="space-y-6"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                  >
+                    {/* Hidden controls */}
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_template" value="table" />
+                    <input type="hidden" name="_subject" value="New Contact Inquiry" />
+                    <input type="hidden" name="access_key" value="9bd5c584-47dc-48d5-8666-9f5d326ccd42" />
+                    <input type="hidden" name="redirect" value="https://main.d19oq5tyfshd58.amplifyapp.com/thanks" />
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium mb-2">First Name</label>
+                        <Input name="firstName" placeholder="John" required />
+                      </div>
+
+                      <div>
+                        <label className="block text-sm font-medium mb-2">Last Name</label>
+                        <Input name="lastName" placeholder="Doe" required />
+                      </div>
                     </div>
+
                     <div>
-                      <label className="block text-sm font-medium mb-2">Last Name</label>
-                      <Input placeholder="Doe" />
+                      <label className="block text-sm font-medium mb-2">Email Address</label>
+                      <Input type="email" name="email" placeholder="john.doe@example.com" required />
                     </div>
-                  </div>
 
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Email Address</label>
-                    <Input type="email" placeholder="john.doe@example.com" />
-                  </div>
+                    <div>
+                      <label className="block text-sm font-medium mb-2">Phone Number</label>
+                      <Input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" />
+                    </div>
 
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Phone Number</label>
-                    <Input type="tel" placeholder="+91 XXXXX XXXXX" />
-                  </div>
+                    <div>
+                      <label className="block text-sm font-medium mb-2">Company Name</label>
+                      <Input name="company" placeholder="Your Company" />
+                    </div>
 
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Company Name</label>
-                    <Input placeholder="Your Company" />
-                  </div>
+                    <div>
+                      <label className="block text-sm font-medium mb-2">Service Interest</label>
+                      <select 
+                        name="service"
+                        className="w-full px-3 py-2 border border-input rounded-md bg-background"
+                        required
+                      >
+                        <option value="">Select a service</option>
+                        <option>Medical Coding & Compliance</option>
+                        <option>Medical Billing & RCM</option>
+                        <option>Patient Support Services</option>
+                        <option>Healthcare Data Management</option>
+                        <option>Telehealth Services</option>
+                        <option>Other BPO Services</option>
+                      </select>
+                    </div>
 
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Service Interest</label>
-                    <select className="w-full px-3 py-2 border border-input rounded-md bg-background">
-                      <option>Select a service</option>
-                      <option>Medical Coding & Compliance</option>
-                      <option>Medical Billing & RCM</option>
-                      <option>Patient Support Services</option>
-                      <option>Healthcare Data Management</option>
-                      <option>Telehealth Services</option>
-                      <option>Other BPO Services</option>
-                    </select>
-                  </div>
+                    <div>
+                      <label className="block text-sm font-medium mb-2">Message</label>
+                      <Textarea 
+                        name="message"
+                        placeholder="Tell us about your requirements..."
+                        rows={5}
+                      />
+                    </div>
 
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Message</label>
-                    <Textarea 
-                      placeholder="Tell us about your requirements..." 
-                      rows={5}
-                    />
-                  </div>
+                    <Button variant="hero" size="lg" className="w-full" type="submit">
+                      Submit Inquiry
+                    </Button>
+                  </form>
 
-                  <Button variant="hero" size="lg" className="w-full">
-                    Submit Inquiry
-                  </Button>
-                </form>
               </CardContent>
             </Card>
 

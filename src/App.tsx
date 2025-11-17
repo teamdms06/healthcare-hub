@@ -56,6 +56,7 @@ import DatabaseAnalytics from "./pages/services/DatabaseAnalytics";
 import StartupServices from "./pages/services/StartupServices";
 import SatisfactionSurvey from "./pages/services/SatisfactionSurvey";
 import ClientStartups from "./pages/services/ClientStartups";
+import Thanks from "./pages/Thanks";
 
 const queryClient = new QueryClient();
 
@@ -77,6 +78,7 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/company" element={<Company />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/thanks" element={<Thanks />} />          
           <Route path="/careers" element={<Contact />} />
           <Route path="/services/medical-coding" element={<MedicalCoding />} />
           <Route path="/services/medical-billing" element={<MedicalBilling />} />

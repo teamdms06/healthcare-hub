@@ -33,6 +33,12 @@
     
     <!--Start of Tawk.to Script-->
     <script>
+
+      window.onload = function() { 
+        // Reset the form fields when the page loads 
+         document.getElementById("form").reset(); 
+      };
+
       // ----------------------------
       /* Load Fuse.js for smart searching */
       (function loadFuse() {
