@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies (npm ci || npm install)
         run: |
           if [ -f package-lock.json ]; then
-            npm ci --prefer-offline --no-audit --progress=false || npm install --no-audit --progress=false
+            npm install --prefer-offline --no-audit --progress=false || npm install --no-audit --progress=false
           else
             npm install --no-audit --progress=false
           fi
