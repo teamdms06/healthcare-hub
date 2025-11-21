@@ -91,7 +91,7 @@ const MedicalBilling = () => {
                 return (
                   <Card 
                     key={service.id} 
-                    className="border-2 border-border hover:border-primary/50 hover:shadow-lg hover:shadow-primary/20 transition-all group cursor-pointer opacity-0 animate-fade-up" 
+                    className="hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up" 
                     style={{ animationDelay: `${index * 60}ms` }}
                     onClick={() => {
                       const element = document.getElementById(service.id);

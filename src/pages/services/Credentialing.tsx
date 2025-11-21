@@ -114,7 +114,7 @@ const Credentialing = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 opacity-0 animate-fade-up cursor-pointer">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-primary mb-4">What Is Individual Provider Credentialing?</h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -125,7 +125,7 @@ const Credentialing = () => {
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 opacity-0 animate-fade-up cursor-pointer">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-primary mb-4">Why Credentialing Matters</h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -142,7 +142,7 @@ const Credentialing = () => {
               {individualFeatures.map((feature, index) => (
                 <div 
                   key={index} 
-                  className="flex items-start gap-3 p-6 bg-card rounded-lg border-2 border-border hover:border-primary/50 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up"
+                  className="flex items-start gap-3 p-6 bg-card rounded-lg border-2 border-border hover:border-accent hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 transition-all duration-300 opacity-0 animate-fade-up group cursor-pointer"
                   style={{ animationDelay: `${index * 80}ms` }}
                 >
                   <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1 transition-all duration-300 group-hover:scale-110" />
@@ -153,7 +153,7 @@ const Credentialing = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               <Card 
-                className="text-center hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up"
+                className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 opacity-0 animate-fade-up cursor-pointer"
                 style={{ animationDelay: '0ms' }}
               >
                 <CardContent className="p-6">
@@ -163,7 +163,7 @@ const Credentialing = () => {
                 </CardContent>
               </Card>
               <Card 
-                className="text-center hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up"
+                className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 opacity-0 animate-fade-up cursor-pointer"
                 style={{ animationDelay: '100ms' }}
               >
                 <CardContent className="p-6">
@@ -173,7 +173,7 @@ const Credentialing = () => {
                 </CardContent>
               </Card>
               <Card 
-                className="text-center hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up"
+                className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 opacity-0 animate-fade-up cursor-pointer"
                 style={{ animationDelay: '200ms' }}
               >
                 <CardContent className="p-6">
@@ -183,7 +183,7 @@ const Credentialing = () => {
                 </CardContent>
               </Card>
               <Card 
-                className="text-center hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up"
+                className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 opacity-0 animate-fade-up cursor-pointer"
                 style={{ animationDelay: '300ms' }}
               >
                 <CardContent className="p-6">
@@ -227,7 +227,7 @@ const Credentialing = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 opacity-0 animate-fade-up cursor-pointer">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-primary mb-4">What Is Group Credentialing?</h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -238,7 +238,7 @@ const Credentialing = () => {
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 opacity-0 animate-fade-up cursor-pointer">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-primary mb-4">Benefits for Your Practice</h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -253,7 +253,7 @@ const Credentialing = () => {
             <h3 className="text-3xl font-bold text-primary mb-8">Complete Group Services</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {groupFeatures.map((feature, index) => (
-                <div key={index} className="flex items-start gap-3 p-6 bg-card rounded-lg border-2 border-border hover:border-primary/50 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
+                <div key={index} className="flex items-start gap-3 p-6 bg-card rounded-lg border-2 border-border hover:border-accent hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 transition-all duration-300 opacity-0 animate-fade-up group cursor-pointer">
                   <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1 transition-all duration-300 group-hover:scale-110" />
                   <p className="font-medium">{feature}</p>
                 </div>
@@ -261,28 +261,28 @@ const Credentialing = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-              <Card className="text-center hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 group cursor-pointer">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 opacity-0 animate-fade-up cursor-pointer">
                 <CardContent className="p-6">
                   <Building2 className="h-12 w-12 text-accent mx-auto mb-4 transition-all duration-300 group-hover:scale-110" />
                   <h4 className="font-bold text-lg mb-2">Practice Setup</h4>
                   <p className="text-sm text-muted-foreground">Complete group enrollment</p>
                 </CardContent>
               </Card>
-              <Card className="text-center hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 group cursor-pointer">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 opacity-0 animate-fade-up cursor-pointer">
                 <CardContent className="p-6">
                   <Clock className="h-12 w-12 text-accent mx-auto mb-4 transition-all duration-300 group-hover:scale-110" />
                   <h4 className="font-bold text-lg mb-2">Efficient Process</h4>
                   <p className="text-sm text-muted-foreground">Multiple providers at once</p>
                 </CardContent>
               </Card>
-              <Card className="text-center hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 group cursor-pointer">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 opacity-0 animate-fade-up cursor-pointer">
                 <CardContent className="p-6">
                   <RefreshCw className="h-12 w-12 text-accent mx-auto mb-4 transition-all duration-300 group-hover:scale-110" />
                   <h4 className="font-bold text-lg mb-2">Automated Renewals</h4>
                   <p className="text-sm text-muted-foreground">Never miss a deadline</p>
                 </CardContent>
               </Card>
-              <Card className="text-center hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 group cursor-pointer">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 opacity-0 animate-fade-up cursor-pointer">
                 <CardContent className="p-6">
                   <TrendingUp className="h-12 w-12 text-accent mx-auto mb-4 transition-all duration-300 group-hover:scale-110" />
                   <h4 className="font-bold text-lg mb-2">Status Tracking</h4>
@@ -342,7 +342,7 @@ const Credentialing = () => {
             <h3 className="text-3xl font-bold text-primary mb-8">Integrated Credentialing Workflow</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {combinedFeatures.map((feature, index) => (
-                <div key={index} className="flex items-start gap-3 p-6 bg-card rounded-lg border-2 border-border hover:border-primary/50 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
+                <div key={index} className="flex items-start gap-3 p-6 bg-card rounded-lg border-2 border-border hover:border-accent hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 transition-all duration-300 opacity-0 animate-fade-up group cursor-pointer">
                   <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1 transition-all duration-300 group-hover:scale-110" />
                   <p className="font-medium">{feature}</p>
                 </div>
@@ -350,7 +350,7 @@ const Credentialing = () => {
             </div>
 
             <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 opacity-0 animate-fade-up cursor-pointer">
                 <CardContent className="p-8">
                   <FileCheck className="h-12 w-12 text-accent mb-4" />
                   <h3 className="text-xl font-bold text-primary mb-3">Centralized Data Management</h3>
@@ -361,7 +361,7 @@ const Credentialing = () => {
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 opacity-0 animate-fade-up cursor-pointer">
                 <CardContent className="p-8">
                   <Shield className="h-12 w-12 text-accent mb-4" />
                   <h3 className="text-xl font-bold text-primary mb-3">Compliance Audits</h3>

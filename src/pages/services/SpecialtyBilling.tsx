@@ -120,7 +120,7 @@ const SpecialtyBilling = () => {
                 <h3 className="text-2xl font-bold text-primary mb-4">End-to-End Dental Billing Management</h3>
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   {dentalFeatures.map((feature, index) => (
-                    <div key={index} className="flex items-start gap-3 p-4 bg-background rounded-lg border border-border">
+                    <div key={index} className="flex items-center gap-2 p-4 bg-secondary/30 rounded-lg border-2 border-transparent hover:border-accent hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 transition-all duration-300 opacity-0 animate-fade-up group cursor-pointer">
                       <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
                       <p className="text-muted-foreground">{feature}</p>
                     </div>
@@ -141,28 +141,28 @@ const SpecialtyBilling = () => {
             </Card>
 
             <div className="grid md:grid-cols-4 gap-6">
-              <Card className="text-center hover:shadow-lg transition-all">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up">
                 <CardContent className="p-6">
                   <TrendingUp className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h4 className="font-bold text-primary mb-2">Increased Revenue</h4>
                   <p className="text-sm text-muted-foreground">Optimize reimbursement with accurate dental coding</p>
                 </CardContent>
               </Card>
-              <Card className="text-center hover:shadow-lg transition-all">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up">
                 <CardContent className="p-6">
                   <Clock className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h4 className="font-bold text-primary mb-2">Faster Payments</h4>
                   <p className="text-sm text-muted-foreground">Reduce payment cycles with clean claims</p>
                 </CardContent>
               </Card>
-              <Card className="text-center hover:shadow-lg transition-all">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up">
                 <CardContent className="p-6">
                   <Shield className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h4 className="font-bold text-primary mb-2">CDT Expertise</h4>
                   <p className="text-sm text-muted-foreground">Certified dental coders ensuring accuracy</p>
                 </CardContent>
               </Card>
-              <Card className="text-center hover:shadow-lg transition-all">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up">
                 <CardContent className="p-6">
                   <Target className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h4 className="font-bold text-primary mb-2">Lower Denials</h4>
@@ -195,7 +195,7 @@ const SpecialtyBilling = () => {
                 <h3 className="text-2xl font-bold text-primary mb-4">Tailored Billing for Mental & Behavioral Health Practices</h3>
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   {mentalHealthFeatures.map((feature, index) => (
-                    <div key={index} className="flex items-start gap-3 p-4 bg-background rounded-lg border border-border">
+                    <div key={index} className="flex items-center gap-2 p-4 bg-secondary/30 rounded-lg border-2 border-transparent hover:border-accent hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 transition-all duration-300 opacity-0 animate-fade-up group cursor-pointer">
                       <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
                       <p className="text-muted-foreground">{feature}</p>
                     </div>
@@ -216,28 +216,28 @@ const SpecialtyBilling = () => {
             </Card>
 
             <div className="grid md:grid-cols-4 gap-6">
-              <Card className="text-center hover:shadow-lg transition-all">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up">
                 <CardContent className="p-6">
                   <Target className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h4 className="font-bold text-primary mb-2">Specialty Expertise</h4>
                   <p className="text-sm text-muted-foreground">Deep understanding of behavioral health codes</p>
                 </CardContent>
               </Card>
-              <Card className="text-center hover:shadow-lg transition-all">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up">
                 <CardContent className="p-6">
                   <TrendingUp className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h4 className="font-bold text-primary mb-2">Revenue Optimization</h4>
                   <p className="text-sm text-muted-foreground">Maximize reimbursement for therapy sessions</p>
                 </CardContent>
               </Card>
-              <Card className="text-center hover:shadow-lg transition-all">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up">
                 <CardContent className="p-6">
                   <Clock className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h4 className="font-bold text-primary mb-2">Time-Based Coding</h4>
                   <p className="text-sm text-muted-foreground">Accurate session duration billing</p>
                 </CardContent>
               </Card>
-              <Card className="text-center hover:shadow-lg transition-all">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up">
                 <CardContent className="p-6">
                   <Shield className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h4 className="font-bold text-primary mb-2">HIPAA Compliance</h4>
@@ -270,7 +270,7 @@ const SpecialtyBilling = () => {
                 <h3 className="text-2xl font-bold text-primary mb-4">Our Eye Care Billing Expertise Covers:</h3>
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   {eyeCareFeatures.map((feature, index) => (
-                    <div key={index} className="flex items-start gap-3 p-4 bg-background rounded-lg border border-border">
+                    <div key={index} className="flex items-center gap-2 p-4 bg-secondary/30 rounded-lg border-2 border-transparent hover:border-accent hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 transition-all duration-300 opacity-0 animate-fade-up group cursor-pointer">
                       <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
                       <p className="text-muted-foreground">{feature}</p>
                     </div>
@@ -291,28 +291,28 @@ const SpecialtyBilling = () => {
             </Card>
 
             <div className="grid md:grid-cols-4 gap-6">
-              <Card className="text-center hover:shadow-lg transition-all">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up">
                 <CardContent className="p-6">
                   <Target className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h4 className="font-bold text-primary mb-2">Dual Billing Expertise</h4>
                   <p className="text-sm text-muted-foreground">Medical and vision insurance coordination</p>
                 </CardContent>
               </Card>
-              <Card className="text-center hover:shadow-lg transition-all">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up">
                 <CardContent className="p-6">
                   <TrendingUp className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h4 className="font-bold text-primary mb-2">Revenue Growth</h4>
                   <p className="text-sm text-muted-foreground">Maximize reimbursement for optical services</p>
                 </CardContent>
               </Card>
-              <Card className="text-center hover:shadow-lg transition-all">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up">
                 <CardContent className="p-6">
                   <Clock className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h4 className="font-bold text-primary mb-2">Efficient Processing</h4>
                   <p className="text-sm text-muted-foreground">Fast claim submission and follow-up</p>
                 </CardContent>
               </Card>
-              <Card className="text-center hover:shadow-lg transition-all">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up">
                 <CardContent className="p-6">
                   <Shield className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h4 className="font-bold text-primary mb-2">Compliance Focus</h4>
@@ -345,7 +345,7 @@ const SpecialtyBilling = () => {
                 <h3 className="text-2xl font-bold text-primary mb-4">Complete Chiropractic Billing Solutions</h3>
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   {chiropracticFeatures.map((feature, index) => (
-                    <div key={index} className="flex items-start gap-3 p-4 bg-background rounded-lg border border-border">
+                    <div key={index} className="flex items-center gap-2 p-4 bg-secondary/30 rounded-lg border-2 border-transparent hover:border-accent hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 transition-all duration-300 opacity-0 animate-fade-up group cursor-pointer">
                       <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
                       <p className="text-muted-foreground">{feature}</p>
                     </div>
@@ -366,28 +366,28 @@ const SpecialtyBilling = () => {
             </Card>
 
             <div className="grid md:grid-cols-4 gap-6">
-              <Card className="text-center hover:shadow-lg transition-all">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up">
                 <CardContent className="p-6">
                   <Target className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h4 className="font-bold text-primary mb-2">Specialty Expertise</h4>
                   <p className="text-sm text-muted-foreground">Deep knowledge of chiropractic billing codes</p>
                 </CardContent>
               </Card>
-              <Card className="text-center hover:shadow-lg transition-all">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up">
                 <CardContent className="p-6">
                   <TrendingUp className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h4 className="font-bold text-primary mb-2">Revenue Optimization</h4>
                   <p className="text-sm text-muted-foreground">Maximize reimbursement for all services</p>
                 </CardContent>
               </Card>
-              <Card className="text-center hover:shadow-lg transition-all">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up">
                 <CardContent className="p-6">
                   <Clock className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h4 className="font-bold text-primary mb-2">Faster Payments</h4>
                   <p className="text-sm text-muted-foreground">Efficient claim processing and follow-up</p>
                 </CardContent>
               </Card>
-              <Card className="text-center hover:shadow-lg transition-all">
+              <Card className="text-center hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 hover:border-accent transition-all duration-300 group cursor-pointer opacity-0 animate-fade-up">
                 <CardContent className="p-6">
                   <Shield className="h-12 w-12 text-accent mx-auto mb-4" />
                   <h4 className="font-bold text-primary mb-2">Compliance Assured</h4>
