@@ -128,7 +128,8 @@ const WhyUs = () => {
               {benefits.map((benefit, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-4 p-6 bg-card rounded-lg hover:shadow-md transition-shadow"
+                  className="flex items-start gap-4 p-6 bg-card rounded-lg hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-2 transition-all duration-300 hover:border-accent"
+                  // className="group hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-2 transition-all duration-300 hover:border-accent"
                 >
                   <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                   <p className="text-lg font-medium text-foreground">{benefit}</p>
@@ -181,7 +182,7 @@ const WhyUs = () => {
               "Improved patient satisfaction scores by 45%",
               "Achieved 99.2% clean claim rate consistently",
             ].map((testimonial, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+              <Card key={index} className="hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-2 transition-all duration-300 hover:border-accent">
                 <CardContent className="p-8">
                   <div className="text-4xl text-accent mb-4">"</div>
                   <p className="text-lg text-muted-foreground italic">{testimonial}</p>

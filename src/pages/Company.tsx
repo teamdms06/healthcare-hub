@@ -143,7 +143,7 @@ const Company = () => {
             {values.map((value, index) => {
               const Icon = value.icon;
               return (
-                <Card key={index} className="hover:shadow-xl transition-all hover:-translate-y-2">
+                <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-accent animate-fade-in">
                   <CardContent className="p-6 text-center">
                     <Icon className="h-12 w-12 text-accent mx-auto mb-4" />
                     <h3 className="text-xl font-bold text-primary mb-3">{value.title}</h3>
@@ -196,7 +196,7 @@ const Company = () => {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {team.map((group, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+              <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-accent animate-fade-in">
                 <CardContent className="p-8">
                   <Users className="h-12 w-12 text-accent mb-4" />
                   <h3 className="text-2xl font-bold text-primary mb-3">{group.name}</h3>
@@ -209,11 +209,11 @@ const Company = () => {
       </section>
 
       {/* Locations */}
-      <section className="py-20 bg-gradient-to-r from-primary to-primary/90 text-primary-foreground">
+      <section className="py-20 contact-page to-primary/90 text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <MapPin className="h-16 w-16 mx-auto mb-6 text-accent" />
-            <h2 className="text-4xl font-bold mb-6">We Are Based in Pune, Bangalore & Gujrat</h2>
+            <h2 className="text-4xl font-bold mb-6">We Are Based in Pune, Bangalore & Ahmedabad</h2>
             <p className="text-xl mb-8 text-primary-foreground/90">
               Strategic presence in India's leading technology hubs enables us to leverage top talent 
               and provide exceptional service across time zones.
