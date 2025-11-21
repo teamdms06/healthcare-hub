@@ -64,7 +64,7 @@ const OmnichannelCommunication = () => {
             <h2 className="text-4xl font-bold text-primary mb-12 text-center">Communication Channels We Handle</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
               {channels.map((channel, index) => (
-                <Card key={index} className="group hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-2 transition-all duration-300">
+                <Card key={index} className="group hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-2 transition-all duration-300 hover:border-accent">
                   <CardContent className="p-6 flex flex-col items-center text-center">
                     <channel.icon className="h-12 w-12 text-accent mb-3 group-hover:scale-125 group-hover:rotate-6 transition-transform duration-300" />
                     <span className="text-sm font-semibold text-primary">{channel.name}</span>

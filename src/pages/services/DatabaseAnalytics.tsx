@@ -59,7 +59,7 @@ const DatabaseAnalytics = () => {
             <h2 className="text-4xl font-bold text-primary mb-12 text-center">Key Highlights</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {benefits.map((benefit, index) => (
-                <Card key={index} className="group hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-2 transition-all duration-300">
+                <Card key={index} className="group hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-2 transition-all duration-300 hover:border-accent">
                   <CardContent className="p-6">
                     <benefit.icon className="h-10 w-10 text-accent mb-4 group-hover:scale-125 group-hover:rotate-6 transition-transform duration-300" />
                     <h4 className="text-xl font-bold text-primary mb-2">{benefit.title}</h4>
