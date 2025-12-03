@@ -6,46 +6,46 @@ import heroImage1 from "@/assets/hero-healthcare-1.jpg";
 import heroImage2 from "@/assets/hero-healthcare-2.jpg";
 import heroImage3 from "@/assets/hero-healthcare-3.jpg";
 import heroImage4 from "@/assets/hero-healthcare-4.jpg";
+import heroicd from "@/assets/hero-icd-coding-1.png";
+import herocpt from "@/assets/hero-cpt-coding-1.png";
+import herohcc from "@/assets/hero-hcc-coding-1.png";
 
 const slides = [
   {
-    image: heroImage1,
-    title: "Healthcare Service Excellence",
-    subtitle: "Optimize Your Healthcare Operations",
+    image: heroicd,
+    title: "Accurate ICD Coding for Error-Free Claims",
+    subtitle: "Boost compliance and ensure precise clinical coding aligned with the latest ICD-10 CM standards.",
     points: [
-      "99.8% Coding Accuracy Rate",
-      "40% Reduction in Claim Denials",
-      "24/7 Patient Support Services",
-      "HIPAA Compliant Operations"
-    ],
-    cta: "Explore Healthcare Services",
-    link: "/services/medical-coding"
-  },
-  {
-    image: heroImage2,
-    title: "Medical Billing & Revenue Cycle Management",
-    subtitle: "Maximize Your Revenue Potential",
-    points: [
-      "Faster Reimbursement Processing",
-      "Expert Denial Management",
-      "Complete Revenue Cycle Solutions",
-      "Advanced Analytics & Reporting"
+      "Medical necessity alignment",
+      "Improved claim acceptance rate",
+      "Reduced denial and audit risks"
     ],
     cta: "Learn More",
-    link: "/services/medical-billing"
+    link: "/services/icd-coding"
   },
   {
-    image: heroImage3,
-    title: "Comprehensive Patient Care",
-    subtitle: "Enhance Patient Experience",
+    image: herocpt,
+    title: "Precise CPT Coding for Maximum Reimbursement",
+    subtitle: "Correct procedural coding to streamline billing and avoid costly claim errors.",
     points: [
-      "Multi-Channel Support",
-      "Real-Time Appointment Scheduling",
-      "Insurance Verification",
-      "Telehealth Support Services"
+      "Updated AMA CPT & HCPCS standards",
+      "Reduced rework and follow-ups",
+      "Faster claim settlement"
     ],
-    cta: "Discover Services",
-    link: "/services/patient-support"
+    cta: "Learn More",
+    link: "/services/cpt-coding"
+  },
+  {
+    image: herohcc,
+    title: "Smart HCC Coding That Improves Risk Scores",
+    subtitle: "Enhance value-based care revenue using accurate condition mapping and hierarchical risk coding.",
+    points: [
+      "Complete documentation assessment",
+      "Advanced analytics & audit validations",
+      "Better RAF score accuracy"
+    ],
+    cta: "Learn More",
+    link: "/services/hcc-coding"
   },
   {
     image: heroImage2,
