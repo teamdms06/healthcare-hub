@@ -9,8 +9,22 @@ import heroImage4 from "@/assets/hero-healthcare-4.jpg";
 import heroicd from "@/assets/hero-icd-coding-1.png";
 import herocpt from "@/assets/hero-cpt-coding-1.png";
 import herohcc from "@/assets/hero-hcc-coding-1.png";
+import herocredit from "@/assets/hero-credentialing-1.png";
 
 const slides = [
+  {
+    image: herocredit,
+    title: "Provider & Group Credentialing Services",
+    subtitle: "Ensure faster approvals, clean enrollments, and seamless payer onboarding.",
+    points: [
+      "Individual Provider Credentialing",
+      "Group Credentialing & Enrollment",
+      "CAQH Setup & Attestation Support",
+      "Automated Follow-Ups & Status Tracking"
+    ],
+    cta: "Learn More",
+    link: "/services/credentialing"
+  },
   {
     image: heroicd,
     title: "Accurate ICD Coding for Error-Free Claims",
