@@ -4,8 +4,46 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Eye, CheckCircle, Shield, TrendingUp, Clock, Target } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const OptometryBilling = () => {
+    // ...existing code...
+    // SEO Helmet and Structured Data
+    const locationKeywords = [
+      "Optometry Billing Services in US",
+      "Optometry revenue cycle management in new york",
+      "Best Optometry Medical Billing Services in Florida",
+      "Optometry Medical Billing Services in Pennsylvania",
+      "Optometry Medical Billing in Texas",
+      "Best Optometry Medical Billing Services in California"
+    ];
+
+    const geoSections = [
+      {
+        title: "Optometry Billing Services in US",
+        content: "Nationwide optometry billing and revenue cycle management for vision and medical eye care practices."
+      },
+      {
+        title: "Optometry Revenue Cycle Management in New York",
+        content: "Expert optometry billing and coding for New York-based practices, maximizing insurance reimbursement."
+      },
+      {
+        title: "Best Optometry Medical Billing Services in Florida",
+        content: "Top-rated optometry billing solutions for Florida optometrists and vision care providers."
+      },
+      {
+        title: "Optometry Medical Billing Services in Pennsylvania",
+        content: "Comprehensive optometry billing and coding for Pennsylvania eye care clinics."
+      },
+      {
+        title: "Optometry Medical Billing in Texas",
+        content: "Efficient optometry billing and RCM for Texas-based practices, including eyewear and optical billing."
+      },
+      {
+        title: "Best Optometry Medical Billing Services in California",
+        content: "California's leading optometry billing and coding specialists for vision and medical claims."
+      }
+    ];
   const features = [
     "Vision and medical billing split",
     "Eyewear and optical billing",
@@ -39,30 +77,46 @@ const OptometryBilling = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-
-      <section className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl">
-            <div className="flex items-center gap-3 mb-6">
-              <Eye className="h-12 w-12 text-accent" />
-              <span className="text-accent font-semibold uppercase tracking-wider">Specialty Billing</span>
+    <>
+      <Helmet>
+        <title>Optometry Billing Services in US, New York, Florida, Pennsylvania, Texas, California | Vision & Medical Billing</title>
+        <meta name="description" content="Expert optometry billing and revenue cycle management in the US, New York, Florida, Pennsylvania, Texas, and California. Vision and medical eye care billing specialists." />
+        <meta name="keywords" content={locationKeywords.join(", ")} />
+        <link rel="canonical" href="https://your-domain.com/services/optometry-billing" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Optometry Billing Services",
+          "description": "Expert optometry billing and revenue cycle management in the US, New York, Florida, Pennsylvania, Texas, and California.",
+          "areaServed": ["US", "NY", "FL", "PA", "TX", "CA"],
+          "provider": {
+            "@type": "Organization",
+            "name": "The-Connections"
+          }
+        })}</script>
+      </Helmet>
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        <section className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl">
+              <div className="flex items-center gap-3 mb-6">
+                <Eye className="h-12 w-12 text-accent" />
+                <span className="text-accent font-semibold uppercase tracking-wider">Specialty Billing</span>
+              </div>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">Optometry Billing Services</h1>
+              <p className="text-xl text-primary-foreground/90 leading-relaxed">
+                Specialized optometry billing services with expertise in both vision and medical eye care 
+                billing to maximize revenue for optometry practices.
+              </p>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Optometry Billing Services</h1>
-            <p className="text-xl text-primary-foreground/90 leading-relaxed">
-              Specialized optometry billing services with expertise in both vision and medical eye care 
-              billing to maximize revenue for optometry practices.
-            </p>
           </div>
-        </div>
-      </section>
+        </section>
 
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-primary mb-12 text-center">Complete Optometry Revenue Cycle</h2>
-            
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start gap-3 p-6 bg-card rounded-lg border-2 border-border hover:border-accent transition-colors">
@@ -71,8 +125,7 @@ const OptometryBilling = () => {
                 </div>
               ))}
             </div>
-
-            <Card className="border-2 border-accent">
+            <Card className="border-2 border-accent mb-8">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-primary mb-4">Dual Billing Expertise</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -88,6 +141,17 @@ const OptometryBilling = () => {
                 </p>
               </CardContent>
             </Card>
+            {/* Geo-specific keyword sections */}
+            <div className="grid md:grid-cols-2 gap-8">
+              {geoSections.map((section, idx) => (
+                <Card key={idx} className="border-2 border-primary">
+                  <CardContent className="p-6">
+                    <h4 className="text-xl font-bold text-primary mb-2">{section.title}</h4>
+                    <p className="text-muted-foreground">{section.content}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -134,7 +198,8 @@ const OptometryBilling = () => {
 
       <Footer />
     </div>
+    </>
   );
-};
+}
 
 export default OptometryBilling;
