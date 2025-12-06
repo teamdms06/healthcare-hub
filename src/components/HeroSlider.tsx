@@ -10,8 +10,24 @@ import heroicd from "@/assets/hero-icd-coding-1.png";
 import herocpt from "@/assets/hero-cpt-coding-1.png";
 import herohcc from "@/assets/hero-hcc-coding-1.png";
 import herocredit from "@/assets/hero-credentialing-1.png";
+import patient from "@/assets/hero-patient-appoint-booking.png";
+import financial from "@/assets/industries/financial.jpg";
+
 
 const slides = [
+    {
+    image: patient,
+    title: "Patient Appointment Scheduling",
+    subtitle: "Seamless coordination between patients and providers through efficient, real-time scheduling.",
+    points: [
+      "Reduce no-shows with automated reminders",
+      "Real-time availability & scheduling",
+      "Patient-first workflow optimization"
+    ],
+    cta: "Learn More",
+    link: "/services/medical-billing#appointment-scheduling",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+  },
   {
     image: herocredit,
     title: "Provider & Group Credentialing Services",
@@ -23,7 +39,8 @@ const slides = [
       "Automated Follow-Ups & Status Tracking"
     ],
     cta: "Learn More",
-    link: "/services/credentialing"
+    link: "/services/credentialing",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: heroicd,
@@ -35,7 +52,8 @@ const slides = [
       "Reduced denial and audit risks"
     ],
     cta: "Learn More",
-    link: "/services/icd-coding"
+    link: "/services/icd-coding",
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)     
   },
   {
     image: herocpt,
@@ -47,7 +65,8 @@ const slides = [
       "Faster claim settlement"
     ],
     cta: "Learn More",
-    link: "/services/cpt-coding"
+    link: "/services/cpt-coding",
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)    
   },
   {
     image: herohcc,
@@ -59,7 +78,21 @@ const slides = [
       "Better RAF score accuracy"
     ],
     cta: "Learn More",
-    link: "/services/hcc-coding"
+    link: "/services/hcc-coding",
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)      
+  },
+  /// BPO Slides Below ///
+    {
+    image: financial,
+    title: "Financial Services BPO Solutions",
+    subtitle: "Secure and compliant outsourcing solutions for banks, insurance companies, and financial institutions.",
+    points: [
+      "Customer Support","Claims Processing",
+      "Fraud Detection","Account Management"
+    ],
+    cta: "Learn More",
+    link: "/industries",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)      
   },
   {
     image: heroImage2,
@@ -75,6 +108,7 @@ const slides = [
     subtitle: "",
     cta: "Learn More",
     link: "/industries",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)     
   },
   {
     image: heroImage4,
@@ -89,35 +123,42 @@ const slides = [
     subtitle: "",
     cta: "Learn more",
     link: "/industries",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
   }
 ];
 
 const HeroSlider = () => {
+  
+  const visibleSlides = slides.filter((slide) => slide.show);  
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
+    if (visibleSlides.length === 0) return;
+
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
+      setCurrentSlide((prev) => (prev + 1) % visibleSlides.length);
     }, 6000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [visibleSlides.length]);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    if (!visibleSlides.length) return;    
+    setCurrentSlide((prev) => (prev + 1) % visibleSlides.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    if (!visibleSlides.length) return;    
+    setCurrentSlide((prev) => (prev - 1 + visibleSlides.length) % visibleSlides.length);
   };
 
   return (
     <div className="relative h-[600px] md:h-[700px] overflow-hidden">
-      {slides.map((slide, index) => (
+      {visibleSlides.map((slide, index) => (
         <div
           key={index}
           className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? "opacity-100" : "opacity-0"
+            index === currentSlide ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           }`}
         >
           {/* Unified Overlay Layout for all slides */}
@@ -201,7 +242,7 @@ const HeroSlider = () => {
 
       {/* Dots Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3">
-        {slides.map((_, index) => (
+        {visibleSlides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}

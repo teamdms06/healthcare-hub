@@ -103,24 +103,15 @@ const WhatWeDo = () => {
       </section>
 
       {/* Healthcare Revenue Cycle Management */}
-      <section className="py-20 md:py-32 relative">
-        <div className="container mx-auto px-4">
+      <section className="py-20 md:py-32 bg-muted/30 relative">
+        <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent"></div>
+        <div className="container mx-auto px-4 relative">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-3xl md:text-5xl font-bold text-primary">Specialize in delivering end-to-end Revenue Cycle Management (RCM) solutions for healthcare providers across the USA</h2>
             <div className="h-1 w-24 bg-accent mx-auto rounded-full"></div>
           </div>
           <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center max-w-7xl mx-auto">
-            <div className="order-2 md:order-1 group">
-              <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
-                <img 
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop" 
-                  alt="Healthcare Revenue Cycle Management" 
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              </div>
-            </div>
-            <div className="order-1 md:order-2 space-y-6">
+            <div className="space-y-6">
               <div className="inline-flex items-center justify-center h-16 w-16 bg-accent/10 rounded-2xl shadow-[var(--shadow-sm)] border border-accent/20">
                 <Users className="h-8 w-8 text-accent" />
               </div>
@@ -136,6 +127,16 @@ const WhatWeDo = () => {
               >
                 <Link to="/healthcare-services">Learn More</Link>
               </Button>
+            </div>
+            <div className="group">
+              <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
+                <img 
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop" 
+                  alt="Healthcare Revenue Cycle Management" 
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
             </div>
           </div>
         </div>
