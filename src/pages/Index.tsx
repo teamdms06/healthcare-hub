@@ -7,6 +7,11 @@ import BPOServices from "@/components/BPOServices";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, TrendingUp, Shield, Clock } from "lucide-react";
+import puneCityscape from "@/assets/pune-cityscape.jpg";
+import medicalBillingImg from "@/assets/healthcare/medical-billing.jpg";
+import analyticsImg from "@/assets/bpo/analytics.jpg";
+import medicalCodingImg from "@/assets/healthcare/medical-coding.jpg";
+import patientSupportImg from "@/assets/healthcare/patient-support.jpg";
 
 const Index = () => {
   return (
@@ -21,18 +26,34 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { icon: Award, label: "Industry Experience", value: "13+ Years" },
-              { icon: TrendingUp, label: "Revenue Improvement", value: "70%" },
-              { icon: Shield, label: "Coding Accuracy", value: "99.8%" },
-              { icon: Clock, label: "Support Available", value: "24/7" },
+              // { icon: Award, label: "Industry Experience", value: "13+ Years" },
+              // { icon: TrendingUp, label: "Revenue Improvement", value: "70%" },
+              // { icon: Shield, label: "Coding Accuracy", value: "99.8%" },
+              // { icon: Clock, label: "Support Available", value: "24/7" },
+              { icon: Award, label: "Industry Experience", value: "13+ Years", bgImage: medicalBillingImg },
+              { icon: TrendingUp, label: "Revenue Improvement", value: "70%", bgImage: analyticsImg },
+              { icon: Shield, label: "Coding Accuracy", value: "99.8%", bgImage: medicalCodingImg },
+              { icon: Clock, label: "Support Available", value: "24/7", bgImage: patientSupportImg },              
             ].map((stat, index) => {
               const Icon = stat.icon;
               return (
-                <Card key={index} className="text-center hover:shadow-md transition-shadow">
-                  <CardContent className="p-6">
-                    <Icon className="h-10 w-10 mx-auto mb-3 text-accent" />
-                    <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
-                    <div className="text-sm text-muted-foreground">{stat.label}</div>
+                // <Card key={index} className="text-center hover:shadow-md transition-shadow">
+                //   <CardContent className="p-6">
+                //     <Icon className="h-10 w-10 mx-auto mb-3 text-accent" />
+                //     <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
+                //     <div className="text-sm text-muted-foreground">{stat.label}</div>
+                <Card key={index} className="group relative text-center overflow-hidden hover:shadow-lg transition-all duration-300">
+                  {/* Background Image */}
+                  <div 
+                    className="absolute inset-0 bg-cover bg-center transition-all duration-500 group-hover:blur-sm group-hover:scale-105"
+                    style={{ backgroundImage: `url(${stat.bgImage})` }}
+                  />
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black/40 transition-all duration-300 group-hover:bg-black/70" />
+                  <CardContent className="relative z-10 p-6">
+                    <Icon className="h-10 w-10 mx-auto mb-3 text-white drop-shadow-lg" />
+                    <div className="text-3xl font-bold text-white mb-1 drop-shadow-lg">{stat.value}</div>
+                    <div className="text-sm text-white/90 drop-shadow-md">{stat.label}</div>                
                   </CardContent>
                 </Card>
               );
@@ -48,11 +69,25 @@ const Index = () => {
       <BPOServices />
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gradient-to-br from-primary to-primary/90 text-primary-foreground">
-        <div className="container mx-auto px-4">
+      {/* <section id="about" className="py-20 bg-gradient-to-br from-primary to-primary/90 text-primary-foreground">
+        <div className="container mx-auto px-4"> */}
+          <section 
+            id="about" 
+            className="py-20 relative overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{ backgroundImage: `url(${puneCityscape})` }}
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/80 to-primary/70" />
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">WE ARE BASED IN PUNE, BANGALORE & AHMEDABAD</h2>
-            <p className="text-xl mb-8 text-primary-foreground/90">
+            {/* <h2 className="text-4xl md:text-5xl font-bold mb-6">WE ARE BASED IN PUNE, BANGALORE & AHMEDABAD</h2>
+            <p className="text-xl mb-8 text-primary-foreground/90"> */}
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg">WE ARE BASED IN PUNE, BANGALORE & AHMEDABAD</h2>
+            <p className="text-xl mb-8 text-white/90">            
               With a strong presence in India's leading IT hubs, we deliver world-class healthcare services that combine
               technology, expertise, and dedication to excellence.
             </p>

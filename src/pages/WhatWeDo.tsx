@@ -23,6 +23,7 @@ import chatbotIcon from "@/assets/icons/chatbot-colorful.png";
 import omnichannelSlide1 from "@/assets/omnichannel-slide-1.jpg";
 import omnichannelSlide2 from "@/assets/omnichannel-slide-2.jpg";
 import omnichannelSlide3 from "@/assets/omnichannel-slide-3.jpg";
+import heroImage from "@/assets/heroes/what-we-do-hero.jpg";
 
 const WhatWeDo = () => {
   const services = [
@@ -76,9 +77,15 @@ const WhatWeDo = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-primary/90">
+      {/* <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-primary/90">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-accent/20 via-transparent to-transparent"></div>
-        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]"></div>
+        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]"></div> */}
+      <section className="relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />        
         <div className="relative container mx-auto px-4 py-32 md:py-40">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4">

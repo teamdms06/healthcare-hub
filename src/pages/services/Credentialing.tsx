@@ -17,6 +17,7 @@ import {
   RefreshCw,
   TrendingUp
 } from "lucide-react";
+import heroImage from "@/assets/healthcare/credentialing.jpg";
 
 const Credentialing = () => {
   const location = useLocation();
@@ -66,15 +67,24 @@ const Credentialing = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-20">
-        <div className="container mx-auto px-4">
+      {/* <section className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-20">
+        <div className="container mx-auto px-4"> */}
+      <section className="relative text-white py-20 min-h-[400px] flex items-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
+        <div className="container mx-auto px-4 relative z-10">        
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center gap-3 mb-6">
               <Shield className="h-12 w-12 text-accent" />
               <span className="text-accent font-semibold uppercase tracking-wider">Credentialing Services</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Complete Credentialing Solutions</h1>
-            <p className="text-xl text-primary-foreground/90 leading-relaxed">
+            {/* <h1 className="text-5xl md:text-6xl font-bold mb-6">Complete Credentialing Solutions</h1>
+            <p className="text-xl text-primary-foreground/90 leading-relaxed"> */}
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">Complete Credentialing Solutions</h1>
+            <p className="text-xl text-white/90 leading-relaxed drop-shadow-md">            
               Streamlined credentialing and payer enrollment for individual providers, group practices, 
               and healthcare organizations nationwide.
             </p>

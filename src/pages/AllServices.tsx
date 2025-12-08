@@ -8,6 +8,7 @@ import {
   Headphones, Calculator, Settings, Building2, Shield, Calendar,
   ClipboardCheck, Activity, TrendingUp, FileCheck, UserCheck, Phone
 } from "lucide-react";
+import heroImage from "@/assets/heroes/all-services-hero.jpg";
 
 const AllServices = () => {
   const healthcareServices = [
@@ -129,11 +130,19 @@ const AllServices = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2YzAtMS4xLjktMiAyLTJzMiAuOSAyIDItLjkgMi0yIDItMi0uOS0yLTJ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-20"></div>
+      {/* <section className="bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2YzAtMS4xLjktMiAyLTJzMiAuOSAyIDItLjkgMi0yIDItMi0uOS0yLTJ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-20"></div> */}
+      <section className="relative text-white py-20 min-h-[400px] flex items-center overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />        
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">All Our Services</h1>
-          <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90">
+          {/* <h1 className="text-5xl md:text-6xl font-bold mb-6">All Our Services</h1>
+          <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90"> */}
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">All Our Services</h1>
+          <p className="text-xl max-w-3xl mx-auto text-white/90 drop-shadow-md">          
             Comprehensive healthcare and BPO solutions designed to transform your operations and drive growth
           </p>
         </div>

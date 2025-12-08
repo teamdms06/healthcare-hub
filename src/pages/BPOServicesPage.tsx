@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { FileText, Headphones, Calculator, Users, Settings, Building2, BarChart3, Database, TrendingUp, ShieldCheck, Clock, Headset } from "lucide-react";
+import heroImage from "@/assets/heroes/bpo-services-hero.jpg";
 
 const bpoServices = [
   {
@@ -98,13 +99,21 @@ const BPOServicesPage = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-primary/90 text-primary-foreground py-20">
-        <div className="container mx-auto px-4">
+      {/* <section className="bg-gradient-to-br from-primary to-primary/90 text-primary-foreground py-20">
+        <div className="container mx-auto px-4"> */}
+      <section className="relative text-white py-20 min-h-[400px] flex items-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
+        <div className="container mx-auto px-4 relative z-10">        
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
               Business Process Outsourcing Services
             </h1>
-            <p className="text-xl text-primary-foreground/90 mb-8">
+            {/* <p className="text-xl text-primary-foreground/90 mb-8"> */}
+            <p className="text-xl text-white/90 mb-8 drop-shadow-md">
               Comprehensive BPO solutions designed to streamline operations, reduce costs, and accelerate business growth across all industries.
             </p>
           </div>

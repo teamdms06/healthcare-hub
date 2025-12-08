@@ -8,61 +8,82 @@ import {
   Plane, Home, Car, Smartphone, Pill, Stethoscope 
 } from "lucide-react";
 
+// Import industry images
+import pharmaceuticalsImg from "@/assets/industries/pharmaceuticals.jpg";
+import financialImg from "@/assets/industries/financial.jpg";
+import ecommerceImg from "@/assets/industries/ecommerce.jpg";
+import telecomImg from "@/assets/industries/telecom.jpg";
+import travelImg from "@/assets/industries/travel.jpg";
+import educationImg from "@/assets/industries/education.jpg";
+import automotiveImg from "@/assets/industries/automotive.jpg";
+import realestateImg from "@/assets/industries/realestate.jpg";
+import medicalDevicesImg from "@/assets/industries/medical-devices.jpg";
+import industriesHeroImg from "@/assets/heroes/industries-hero.jpg";
+
 const Industries = () => {
   const industries = [
      {
       icon: Stethoscope,
       title: "Pharmaceuticals",
       description: "Specialized support for pharmaceutical companies including regulatory compliance and customer service.",
-      services: ["Compliance Management", "Sales Support", "Customer Service", "Data Analytics"]
+      services: ["Compliance Management", "Sales Support", "Customer Service", "Data Analytics"],
+      image: pharmaceuticalsImg
     },
     {
       icon: Building2,
       title: "Financial Services",
       description: "Secure and compliant BPO solutions for banks, insurance companies, and financial institutions.",
-      services: ["Customer Support", "Claims Processing", "Fraud Detection", "Account Management"]
+      services: ["Customer Support", "Claims Processing", "Fraud Detection", "Account Management"],
+      image: financialImg
     },
     {
       icon: ShoppingCart,
       title: "E-commerce & Retail",
       description: "End-to-end customer support and order management solutions for online and offline retailers.",
-      services: ["Order Processing", "Customer Service", "Inventory Support", "Returns Management"]
+      services: ["Order Processing", "Customer Service", "Inventory Support", "Returns Management"],
+      image: ecommerceImg
     },
     {
       icon: Smartphone,
       title: "Telecommunications",
       description: "Technical support and customer care services for telecom operators and service providers.",
-      services: ["Technical Support", "Billing Support", "Retention Services", "Sales"]
+      services: ["Technical Support", "Billing Support", "Retention Services", "Sales"],
+      image: telecomImg
     },
     {
       icon: Plane,
       title: "Travel & Hospitality",
       description: "Reservation management and customer support for travel agencies, hotels, and tourism companies.",
-      services: ["Booking Management", "Customer Service", "Concierge Services", "Loyalty Programs"]
+      services: ["Booking Management", "Customer Service", "Concierge Services", "Loyalty Programs"],
+      image: travelImg
     },
     {
       icon: GraduationCap,
       title: "Education",
       description: "Admissions support, student services, and administrative assistance for educational institutions.",
-      services: ["Student Support", "Admissions", "Alumni Relations", "Administrative Services"]
+      services: ["Student Support", "Admissions", "Alumni Relations", "Administrative Services"],
+      image: educationImg
     },
     {
       icon: Car,
       title: "Automotive",
       description: "Customer service and roadside assistance for automotive manufacturers and dealers.",
-      services: ["Customer Service", "Roadside Assistance", "Parts Support", "Service Scheduling"]
+      services: ["Customer Service", "Roadside Assistance", "Parts Support", "Service Scheduling"],
+      image: automotiveImg
     },
     {
       icon: Home,
       title: "Real Estate",
       description: "Lead generation, customer support, and property management services for real estate businesses.",
-      services: ["Lead Management", "Property Inquiries", "Tenant Support", "Appointment Scheduling"]
+      services: ["Lead Management", "Property Inquiries", "Tenant Support", "Appointment Scheduling"],
+      image: realestateImg
     },
     {
       icon: Pill,
       title: "Medical Devices",
       description: "Technical support and compliance services for medical device manufacturers and distributors.",
-      services: ["Technical Support", "Regulatory Compliance", "Training Services", "Product Support"]
+      services: ["Technical Support", "Regulatory Compliance", "Training Services", "Product Support"],
+      image: medicalDevicesImg
     }
   ];
 
@@ -71,10 +92,22 @@ const Industries = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-20">
+      {/* <section className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Industries We Serve</h1>
-          <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90">
+          <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90"> */}
+      <section className="relative py-20 overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${industriesHeroImg})` }}
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">Industries We Serve</h1>
+          <p className="text-xl max-w-3xl mx-auto text-white/90 drop-shadow-md">          
             Delivering specialized BPO solutions across diverse industries with domain expertise and proven results
           </p>
         </div>
@@ -117,17 +150,32 @@ const Industries = () => {
               return (
                 <Card 
                   key={index} 
-                  className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-accent"
+                //   className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-accent"
+                // >
+                //   <CardContent className="p-6">
+                //     <Icon className="h-12 w-12 text-accent mb-4" />
+                //     <h3 className="text-2xl font-bold text-primary mb-3">{industry.title}</h3>
+                //     <p className="text-muted-foreground mb-6">{industry.description}</p>
+                  className="group relative overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 min-h-[360px] animate-fade-in"
+                  style={{ animationDelay: `${index * 0.08}s` }}
                 >
-                  <CardContent className="p-6">
-                    <Icon className="h-12 w-12 text-accent mb-4" />
-                    <h3 className="text-2xl font-bold text-primary mb-3">{industry.title}</h3>
-                    <p className="text-muted-foreground mb-6">{industry.description}</p>
+                  {/* Background Image */}
+                  <div 
+                    className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                    style={{ backgroundImage: `url(${industry.image})` }}
+                  />
+                  {/* Dark Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/75 to-black/40 group-hover:from-black/98 group-hover:via-black/80 transition-all duration-300" />
+                  
+                  <CardContent className="relative z-10 p-6 h-full flex flex-col justify-end">
+                    <Icon className="h-12 w-12 text-white/90 mb-4 group-hover:text-accent group-hover:scale-110 transition-all duration-300" />
+                    <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-accent transition-colors">{industry.title}</h3>
+                    <p className="text-white/80 mb-4 text-sm">{industry.description}</p>
                     <div className="space-y-2">
-                      <p className="font-semibold text-sm text-primary">Key Services:</p>
+                      <p className="font-semibold text-sm text-accent">Key Services:</p>
                       <ul className="space-y-1">
                         {industry.services.map((service, idx) => (
-                          <li key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
+                          <li key={idx} className="flex items-center gap-2 text-sm text-white/70">
                             <div className="h-1.5 w-1.5 bg-accent rounded-full" />
                             {service}
                           </li>

@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Activity, CheckCircle, Shield, TrendingUp, Clock, Target } from "lucide-react";
+import heroImage from "@/assets/healthcare/chiropractic.jpg";
 
 const ChiropracticBilling = () => {
   const features = [
@@ -42,15 +43,24 @@ const ChiropracticBilling = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      <section className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-20">
-        <div className="container mx-auto px-4">
+      {/* <section className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-20">
+        <div className="container mx-auto px-4"> */}
+      <section className="relative text-white py-20 min-h-[400px] flex items-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
+        <div className="container mx-auto px-4 relative z-10">        
           <div className="max-w-4xl">
             <div className="flex items-center gap-3 mb-6">
               <Activity className="h-12 w-12 text-accent" />
               <span className="text-accent font-semibold uppercase tracking-wider">Specialty Billing</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Chiropractic Billing Services</h1>
-            <p className="text-xl text-primary-foreground/90 leading-relaxed">
+            {/* <h1 className="text-5xl md:text-6xl font-bold mb-6">Chiropractic Billing Services</h1>
+            <p className="text-xl text-primary-foreground/90 leading-relaxed"> */}
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">Chiropractic Billing Services</h1>
+            <p className="text-xl text-white/90 leading-relaxed drop-shadow-md">            
               Specialized chiropractic billing services with expertise in adjustment coding, modality billing, 
               and personal injury claims to maximize revenue for your practice.
             </p>

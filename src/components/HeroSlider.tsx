@@ -12,9 +12,24 @@ import herohcc from "@/assets/hero-hcc-coding-1.png";
 import herocredit from "@/assets/hero-credentialing-1.png";
 import patient from "@/assets/hero-patient-appoint-booking.png";
 import financial from "@/assets/industries/financial.jpg";
+import dental from "@/assets/healthcare/dental-1.png";
 
 
 const slides = [
+{
+    image: dental,
+    title: "Dental Specialty Billing Services",
+    subtitle: "Maximizing dental reimbursements with accurate CDT coding and seamless claim management.",
+    points: [
+      "CDT & ICD-10 Certified Coding",
+      "Specialty-Focused Billing (Orthodontics, Periodontics, Oral Surgery)",
+      "End-to-End Claim Submission & Denial Management",
+      "Faster Payments & Clean Claim Accuracy"
+    ],
+    cta: "Learn More",
+    link: "/services/specialty-billing#dental",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+  },  
     {
     image: patient,
     title: "Patient Appointment Scheduling",

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import contactHeroImg from "@/assets/heroes/contact-hero.jpg";
 
 const Contact = () => {
   return (
@@ -12,10 +13,22 @@ const Contact = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-20">
+      {/* <section className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Contact Us</h1>
-          <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90">
+          <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90"> */}
+      <section className="relative py-20 overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${contactHeroImg})` }}
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">Contact Us</h1>
+          <p className="text-xl max-w-3xl mx-auto text-white/90 drop-shadow-md">          
             Let's discuss how we can help transform your healthcare operations
           </p>
         </div>

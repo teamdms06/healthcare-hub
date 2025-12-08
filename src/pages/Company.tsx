@@ -4,6 +4,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Target, Eye, Award, Users, MapPin, TrendingUp } from "lucide-react";
+import companyHeroImg from "@/assets/heroes/company-hero.jpg";
+import Tilt3DCard from "@/components/Tilt3DCard";
 
 const Company = () => {
   const values = [
@@ -63,10 +65,22 @@ const Company = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-20">
+      {/* <section className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">About The-Connections</h1>
-          <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90">
+          <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90"> */}
+      <section className="relative py-20 overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${companyHeroImg})` }}
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">About The-Connections</h1>
+          <p className="text-xl max-w-3xl mx-auto text-white/90 drop-shadow-md">          
             Quality & Value Delivered, Together - Your trusted partner in healthcare excellence since 2011
           </p>
         </div>
@@ -102,7 +116,36 @@ const Company = () => {
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            <Card className="border-2 border-accent">
+
+            <Tilt3DCard>
+              <Card className="border-2 border-accent h-full">
+                <CardContent className="p-8">
+                  <Target className="h-16 w-16 text-accent mb-6" />
+                  <h3 className="text-3xl font-bold text-primary mb-4">Our Mission</h3>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    To empower healthcare providers with world-class BPO services that optimize operations, 
+                    reduce costs, and enhance patient care. We are committed to delivering excellence through 
+                    innovation, expertise, and unwavering dedication to our clients' success.
+                  </p>
+                </CardContent>
+              </Card>
+            </Tilt3DCard>
+
+            <Tilt3DCard>
+              <Card className="border-2 border-accent h-full">
+                <CardContent className="p-8">
+                  <Eye className="h-16 w-16 text-accent mb-6" />
+                  <h3 className="text-3xl font-bold text-primary mb-4">Our Vision</h3>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    To be the global leader in healthcare services, recognized for our exceptional quality, 
+                    innovative solutions, and transformative impact on healthcare operations worldwide. We envision 
+                    a future where every healthcare provider has access to best-in-class support services.
+                  </p>
+                </CardContent>
+              </Card>
+            </Tilt3DCard>
+
+            {/* <Card className="border-2 border-accent">
               <CardContent className="p-8">
                 <Target className="h-16 w-16 text-accent mb-6" />
                 <h3 className="text-3xl font-bold text-primary mb-4">Our Mission</h3>
@@ -124,7 +167,7 @@ const Company = () => {
                   a future where every healthcare provider has access to best-in-class support services.
                 </p>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </section>

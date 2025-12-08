@@ -3,48 +3,55 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { FileText, Headphones, Calculator, Users, Settings, Building2, ArrowRight } from "lucide-react";
 
+import acquisitionImg from "@/assets/menu/acquisition.jpg";
+import analyticsImg from "@/assets/menu/analytics.jpg";
+import consultingImg from "@/assets/menu/consulting.jpg";
+import dataEntryImg from "@/assets/bpo/data-entry.jpg";
+import technicalSupportImg from "@/assets/bpo/technical-support.jpg";
+import omnichannelImg from "@/assets/omnichannel-slide-1.jpg";
+
 const services = [
   {
     icon: FileText,
     title: "Data Entry & Processing",
     description: "High-accuracy data entry, document processing, and digital transformation services.",
     link: "/services/data-management",
-    color: "text-blue-600"
+    image: dataEntryImg
   },
   {
     icon: Headphones,
     title: "Customer Support Services",
     description: "24/7 multi-channel customer support with expert agents and advanced CRM integration.",
     link: "/services/patient-support",
-    color: "text-red-600"
+    image: omnichannelImg
   },
   {
     icon: Calculator,
     title: "Finance & Accounting",
     description: "Bookkeeping, accounts payable/receivable, payroll processing, and financial reporting.",
     link: "/services/account-receivable",
-    color: "text-purple-600"
+    image: analyticsImg
   },
   {
     icon: Users,
     title: "HR & Recruitment",
     description: "Talent acquisition, onboarding, payroll management, and employee support services.",
     link: "/services/group-credentialing",
-    color: "text-orange-600"
+    image: acquisitionImg
   },
   {
     icon: Settings,
     title: "Technical Support",
     description: "IT helpdesk, software support, and technical troubleshooting for global businesses.",
     link: "/services/telehealth",
-    color: "text-teal-600"
+    image: technicalSupportImg
   },
   {
     icon: Building2,
     title: "Back Office Operations",
     description: "Administrative support, document management, and business process automation.",
     link: "/services/business-analysis",
-    color: "text-red-600"
+    image: consultingImg
   }
 ];
 
@@ -68,17 +75,29 @@ const BPOServices = () => {
             return (
               <Card 
                 key={index} 
-                className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-2 hover:border-accent animate-fade-in"
+                // className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-2 hover:border-accent animate-fade-in"
+                className="group relative overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 min-h-[280px] animate-fade-in"                
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <CardContent className="p-6">
-                  <div className={`${service.color} mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                {/* <CardContent className="p-6">
+                  <div className={`${service.color} mb-4 group-hover:scale-110 transition-transform duration-300`}> */}
+                <div 
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                  style={{ backgroundImage: `url(${service.image})` }}
+                />
+                {/* Dark Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/40 group-hover:from-black/95 group-hover:via-black/75 transition-all duration-300" />
+                
+                <CardContent className="relative z-10 p-6 h-full flex flex-col justify-end">
+                  <div className="text-white/90 mb-4 group-hover:scale-110 group-hover:text-accent transition-all duration-300">
                     <Icon className="h-12 w-12" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-primary group-hover:text-accent transition-colors">
+                  {/* <h3 className="text-xl font-bold mb-3 text-primary group-hover:text-accent transition-colors"> */}
+                  <h3 className="text-xl font-bold mb-3 text-white group-hover:text-accent transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                  {/* <p className="text-muted-foreground mb-4 leading-relaxed"> */}
+                  <p className="text-white/80 leading-relaxed text-sm">
                     {service.description}
                   </p>
                 </CardContent>

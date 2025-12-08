@@ -145,3 +145,25 @@ All colors MUST be HSL.
   z-index: 9999 !important;
   position: fixed !important;
 }
+
+/* 3D Tilt Card Effect - follows mouse from all sides */
+.tilt-3d-card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease-out;
+  will-change: transform;
+}
+
+.tilt-3d-glare {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+}
+
+.tilt-3d-card:hover {
+  box-shadow: 
+    0 25px 50px -12px hsl(220 25% 15% / 0.25),
+    0 0 30px hsl(0 75% 50% / 0.15);
+}

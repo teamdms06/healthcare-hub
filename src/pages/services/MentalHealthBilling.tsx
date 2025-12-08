@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Brain, CheckCircle, Shield, TrendingUp, Clock, Heart } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import heroImage from "@/assets/healthcare/mental-health.jpg";
 
 const MentalHealthBilling = () => {
     const locationKeywords = [
@@ -90,15 +91,24 @@ const MentalHealthBilling = () => {
       </Helmet>
       <div className="min-h-screen flex flex-col">
         <Navbar />
-        <section className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-20">
-          <div className="container mx-auto px-4">
+        {/* <section className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-20">
+          <div className="container mx-auto px-4"> */}
+      <section className="relative text-white py-20 min-h-[400px] flex items-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
+        <div className="container mx-auto px-4 relative z-10">          
             <div className="max-w-4xl">
               <div className="flex items-center gap-3 mb-6">
                 <Brain className="h-12 w-12 text-accent" />
                 <span className="text-accent font-semibold uppercase tracking-wider">Specialty Billing</span>
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">Mental Health Billing Services</h1>
-              <p className="text-xl text-primary-foreground/90 leading-relaxed">
+              {/* <h1 className="text-5xl md:text-6xl font-bold mb-6">Mental Health Billing Services</h1>
+              <p className="text-xl text-primary-foreground/90 leading-relaxed"> */}
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">Mental Health Billing Services</h1>
+            <p className="text-xl text-white/90 leading-relaxed drop-shadow-md">              
                 Specialized billing services for mental health providers, including psychiatrists, psychologists, 
                 therapists, and counselors with expertise in behavioral health reimbursement.
               </p>
