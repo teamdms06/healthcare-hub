@@ -85,8 +85,8 @@ const Navbar = () => {
       { name: "Prescription Prior Authorization", path: "/services/medical-billing#prescription-authorization" },
     ],
     specialty: [
-      { name: "Dental Specialty Billing", path: "/services/specialty-billing#dental" },
-      { name: "Mental & Behavioral Health", path: "/services/specialty-billing#mental-health" },
+      { name: "Dental Specialty Billing", path: "/services/dental-billing" },
+      { name: "Mental & Behavioral Health", path: "/services/mental-health-billing" },
       { name: "Optometry & Ophthalmology", path: "/services/specialty-billing#eye-care" },
       { name: "Chiropractic Specialty", path: "/services/specialty-billing#chiropractic" },
     ],
