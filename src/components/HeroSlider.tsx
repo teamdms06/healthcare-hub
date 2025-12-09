@@ -13,10 +13,26 @@ import herocredit from "@/assets/hero-credentialing-1.png";
 import patient from "@/assets/hero-patient-appoint-booking.png";
 import financial from "@/assets/industries/financial.jpg";
 import dental from "@/assets/healthcare/dental-1.png";
+import mental from "@/assets/healthcare/behaviour-mental-health-billing-services-1.png";
+import contact from "@/assets/contact-center-hero.jpeg";
 
 
 const slides = [
-{
+  {
+    image: mental,
+    title: "Mental & Behavioral Health Billing Services",
+    subtitle: "MAXIMIZING MENTAL HEALTH REIMBURSEMENTS WITH ACCURATE CODING AND SEAMLESS CLAIM MANAGEMENT.",
+    points: [
+      "CPT & ICD-10 Certified Coding",
+      "Telehealth & Time-Based Session Billing",
+      "Insurance Eligibility & Benefits Coordination",
+      "Faster Payments & Clean Claim Accuracy"
+    ],
+    cta: "Learn More",
+    link: "/services/mental-health-billing",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+  }, 
+  {
     image: dental,
     title: "Dental Specialty Billing Services",
     subtitle: "Maximizing dental reimbursements with accurate CDT coding and seamless claim management.",
@@ -55,7 +71,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/credentialing",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: heroicd,
@@ -97,6 +113,20 @@ const slides = [
     show: false, // ✅ visible  || ❌ hidden (still in array but not shown)      
   },
   /// BPO Slides Below ///
+  {
+    image: contact,
+    title: "Contact Centre Operations & Support",
+    subtitle: "EFFORTLESS COMMUNICATION SUPPORT WITH 24×7 CUSTOMER HANDLING & MULTI-CHANNEL SERVICE.",
+    points: [
+      "Inbound & Outbound Call Handling",
+      "Multi-Channel Chat & Messaging Support",
+      "Email & WhatsApp Resolution Management",
+      "24×7 Availability & Fast Response"
+    ],
+    cta: "Learn More",
+    link: "/services/contact-centre",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)      
+  },
     {
     image: financial,
     title: "Financial Services BPO Solutions",

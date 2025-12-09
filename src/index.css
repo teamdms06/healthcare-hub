@@ -167,3 +167,8 @@ All colors MUST be HSL.
     0 25px 50px -12px hsl(220 25% 15% / 0.25),
     0 0 30px hsl(0 75% 50% / 0.15);
 }
+
+.light-pink {
+  background-color: #ffe5e5;
+  border-color: hsl(0deg 65.66% 74.95%)  
+}
