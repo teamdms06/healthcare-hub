@@ -57,7 +57,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/medical-billing#appointment-scheduling",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: herocredit,
@@ -84,7 +84,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/icd-coding",
-    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)     
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)     
   },
   {
     image: herocpt,
@@ -97,7 +97,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/cpt-coding",
-    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)    
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)    
   },
   {
     image: herohcc,
@@ -110,7 +110,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/hcc-coding",
-    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)      
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)      
   },
   /// BPO Slides Below ///
   {

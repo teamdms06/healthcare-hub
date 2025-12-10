@@ -9,9 +9,9 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="bg-accent text-accent-foreground p-2 rounded-lg font-bold text-xl">
+              {/* <div className="bg-accent text-accent-foreground p-2 rounded-lg font-bold text-xl">
                 TC
-              </div>
+              </div> */}
               <span className="font-bold text-lg">The-Connections</span>
             </div>
             <p className="text-primary-foreground/80 mb-4">

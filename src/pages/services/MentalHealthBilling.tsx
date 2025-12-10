@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import {
   Brain,
   HeartPulse,
+  Smile,
   ShieldCheck,
   Clock,
   LineChart,
@@ -187,39 +188,29 @@ const MentalHealthBilling = () => {
         <Navbar />
 
         {/* HERO */}
-      <section className="relative bg-primary text-primary-foreground">
-        <div className="absolute inset-0 overflow-hidden">
-          <img src={heroImage} alt="ICD Coding Services" className="w-full h-full object-cover opacity-20" />
-        </div>
-          <div className="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-            <div>
-              <div className="flex items-center gap-3 mb-5">
-                <Brain className="h-10 w-10 text-accent" />
+        <section className="relative text-white py-20 min-h-[400px] flex items-center">
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${heroImage})` }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-4xl">
+              <div className="flex items-center gap-3 mb-6">
+                <Smile className="h-12 w-12 text-accent" />
                 <span className="text-accent font-semibold uppercase tracking-wider">
                   Specialty Billing
                 </span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
                 Mental &amp; Behavioral Health Billing Services
               </h1>
-              <p className="text-lg md:text-xl text-primary-foreground/90 mb-6">
+              <p className="text-xl text-white/90 leading-relaxed drop-shadow-md">
                 Tailored billing and coding support for psychiatrists, therapists,
                 psychologists, and behavioral health clinics—so your team can focus on
                 patient well-being while we manage the revenue cycle.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Button variant="hero" size="lg" asChild>
-                  <Link to="/contact">Schedule a Consultation</Link>
-                </Button>
-                <Button variant="outline_hero" size="lg" asChild>
-                  <Link to="/services/medical-billing">View All Billing Services</Link>
-                </Button>
-              </div>
-              <div className="flex items-center gap-2 mt-4 text-sm text-primary-foreground/80">
-
-              </div>
             </div>
-
           </div>
         </section>
 
