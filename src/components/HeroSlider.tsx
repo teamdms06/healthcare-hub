@@ -30,7 +30,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/mental-health-billing",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
   }, 
   {
     image: dental,
@@ -44,7 +44,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/specialty-billing#dental",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },  
     {
     image: patient,
@@ -57,7 +57,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/medical-billing#appointment-scheduling",
-    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: herocredit,
