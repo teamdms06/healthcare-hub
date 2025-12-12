@@ -15,9 +15,24 @@ import financial from "@/assets/industries/financial.jpg";
 import dental from "@/assets/healthcare/dental-1.png";
 import mental from "@/assets/healthcare/behaviour-mental-health-billing-services-1.png";
 import contact from "@/assets/contact-center-hero.jpeg";
+import optometry from "@/assets/optometry-hero.jpeg";
 
 
 const slides = [
+  {
+    image: optometry,
+    title: "Optometry & Ophthalmology Billing Services",
+    subtitle: "MAXIMIZING EYE CARE REIMBURSEMENTS WITH ACCURATE CODING & SEAMLESS CLAIM MANAGEMENT.",
+    points: [
+      "Ophthalmic CPT / ICD-10 Certified Coding",
+      "Refraction, Diagnostic Testing & Surgical Billing",
+      "Coordination of Medical & Vision Insurance Benefits",
+      "Faster Payments with Clean Claim Submission"
+    ],
+    cta: "Learn More",
+    link: "/services/specialty-billing#eye-care",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+  },   
   {
     image: mental,
     title: "Mental & Behavioral Health Billing Services",
@@ -113,6 +128,20 @@ const slides = [
     show: true, // ✅ visible  || ❌ hidden (still in array but not shown)      
   },
   /// BPO Slides Below ///
+    {
+    image: contact,
+    title: "Customer Care That Never Stops",
+    subtitle: "DELIVER ROUND-THE-CLOCK SUPPORT WITH A TEAM THAT HANDLES EVERY CHANNEL, EVERY SHIFT AND EVERY CUSTOMER—WITHOUT DOWNTIME.",
+    points: [
+      "Omnichannel Triage",
+      "Escalation & Resolution",
+      "After-Hours Support",
+      "Knowledge & QA"
+    ],
+    cta: "Learn More",
+    link: "/services/contact-centre",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)      
+  },
   {
     image: contact,
     title: "Contact Centre Operations & Support",
@@ -125,7 +154,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/contact-centre",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)      
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)      
   },
     {
     image: financial,
@@ -137,7 +166,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/industries",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)      
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)      
   },
   {
     image: heroImage2,
