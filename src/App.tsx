@@ -59,6 +59,7 @@ import ClientStartups from "./pages/services/ClientStartups";
 import Thanks from "./pages/Thanks";
 import MentalHealthBilling from "./pages/services/MentalHealthBilling";
 import DentalBilling from "./pages/services/DentalBilling";
+import OptometryBilling from "./pages/services/OptometryBilling";
 
 const queryClient = new QueryClient();
 
@@ -111,7 +112,7 @@ const App = () => (
           <Route path="/services/specialty-billing" element={<SpecialtyBilling />} />
           <Route path="/services/dental-billing" element={<DentalBilling />} />
           <Route path="/services/mental-health-billing" element={<MentalHealthBilling/>} />
-          <Route path="/services/optometry-billing" element={<SpecialtyBilling />} />
+          <Route path="/services/optometry-billing" element={<OptometryBilling />} />
           <Route path="/services/chiropractic-billing" element={<SpecialtyBilling />} />
           <Route path="/services/client-strategies" element={<ClientStrategies />} />
           <Route path="/services/customer-care" element={<CustomerCare />} />

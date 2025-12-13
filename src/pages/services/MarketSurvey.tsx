@@ -136,14 +136,14 @@ const MarketSurvey = () => {
               pricing and growth decisions with confidence.
             </p>
 
-            <div className="flex flex-wrap gap-3">
+            {/* <div className="flex flex-wrap gap-3">
               <Button variant="hero" size="lg" asChild>
                 <Link to="/contact">Request a Quote</Link>
               </Button>
               <Button variant="outline_hero" size="lg" asChild>
                 <Link to="#methodology">Our Methodology</Link>
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

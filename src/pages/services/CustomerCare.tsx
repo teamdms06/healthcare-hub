@@ -95,14 +95,14 @@ const CustomerCare = () => {
               We become your extended support team that never shuts down — handling spikes, urgent issues and ongoing follow-ups with consistent quality.
             </p>
 
-            <div className="flex gap-3">
+            {/* <div className="flex gap-3">
               <Button size="lg" variant="hero" asChild>
                 <Link to="/contact">Start 24×7 Support</Link>
               </Button>
               <Button size="lg" variant="outline_hero" asChild>
                 <Link to="#services">See Services</Link>
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

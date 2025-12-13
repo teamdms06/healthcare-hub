@@ -30,8 +30,8 @@ const slides = [
       "Faster Payments with Clean Claim Submission"
     ],
     cta: "Learn More",
-    link: "/services/specialty-billing#eye-care",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    link: "/services/optometry-billing",
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },   
   {
     image: mental,
@@ -45,7 +45,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/mental-health-billing",
-    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
   }, 
   {
     image: dental,
@@ -59,7 +59,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/specialty-billing#dental",
-    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },  
     {
     image: patient,
@@ -99,7 +99,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/icd-coding",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)     
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)     
   },
   {
     image: herocpt,
@@ -112,7 +112,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/cpt-coding",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)    
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)    
   },
   {
     image: herohcc,
@@ -125,7 +125,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/hcc-coding",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)      
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)      
   },
   /// BPO Slides Below ///
     {

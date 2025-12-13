@@ -95,14 +95,14 @@ const OmnichannelCommunication = () => {
               brand-aligned answers across every channel.
             </p>
 
-            <div className="flex flex-wrap gap-3">
+            {/* <div className="flex flex-wrap gap-3">
               <Button size="lg" variant="hero" asChild>
                 <Link to="/contact">Get a Demo</Link>
               </Button>
               <Button size="lg" variant="outline_hero" asChild>
                 <Link to="#how-it-works">How It Works</Link>
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

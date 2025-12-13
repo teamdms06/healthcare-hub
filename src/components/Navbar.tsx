@@ -87,7 +87,7 @@ const Navbar = () => {
     specialty: [
       { name: "Dental Specialty Billing", path: "/services/dental-billing" },
       { name: "Mental & Behavioral Health", path: "/services/mental-health-billing" },
-      { name: "Optometry & Ophthalmology", path: "/services/specialty-billing#eye-care" },
+      { name: "Optometry & Ophthalmology", path: "/services/optometry-billing" },
       { name: "Chiropractic Specialty", path: "/services/specialty-billing#chiropractic" },
     ],
   };
