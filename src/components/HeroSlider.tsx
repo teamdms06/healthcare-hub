@@ -16,9 +16,23 @@ import dental from "@/assets/healthcare/dental-1.png";
 import mental from "@/assets/healthcare/behaviour-mental-health-billing-services-1.png";
 import contact from "@/assets/contact-center-hero.jpeg";
 import optometry from "@/assets/optometry-hero.jpeg";
-
+import eligibility from "@/assets/healthcare/eligibility.jpg";
 
 const slides = [
+  {
+    image: eligibility,
+    title: "Eligibility Verification",
+    subtitle: "ENSURING ACCURATE BILLING WITH REAL-TIME ELIGIBILITY & BENEFITS VERIFICATION.",
+    points: [
+      "Pre-Visit Insurance Verification",
+      "Coverage, Copay & Deductible Validation",
+      "Real-Time Payer Portal & EDI Checks",
+      "Fewer Denials with Accurate Eligibility Data"
+    ],
+    cta: "Learn More",
+    link: "/services/eligibility-verification",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+  }, 
   {
     image: optometry,
     title: "Optometry & Ophthalmology Billing Services",

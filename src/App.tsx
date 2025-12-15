@@ -97,7 +97,7 @@ const App = () => (
           <Route path="/services/group-credentialing" element={<Credentialing />} />
           <Route path="/services/provider-group-credentialing" element={<Credentialing />} />
           <Route path="/services/appointment-scheduling" element={<MedicalBilling />} />
-          <Route path="/services/eligibility-verification" element={<MedicalBilling />} />
+          <Route path="/services/eligibility-verification" element={<EligibilityVerification />} />
           <Route path="/services/charge-capturing" element={<MedicalBilling />} />
           <Route path="/services/claim-audits" element={<MedicalBilling />} />
           <Route path="/services/claim-submission" element={<MedicalBilling />} />
