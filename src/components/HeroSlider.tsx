@@ -17,8 +17,23 @@ import mental from "@/assets/healthcare/behaviour-mental-health-billing-services
 import contact from "@/assets/contact-center-hero.jpeg";
 import optometry from "@/assets/optometry-hero.jpeg";
 import eligibility from "@/assets/healthcare/eligibility.jpg";
+import chargecapture from "@/assets/healthcare/charge-capture.png";
 
 const slides = [
+  {
+    image: chargecapture,
+    title: "Charge Capturing & Entry Services",
+    subtitle: "ENSURING ACCURATE CHARGE ENTRY WITH CLEAN CPT CODING & MODIFIER COMPLIANCE.",
+    points: [
+      "Accurate CPT Code Assignment",
+      "Revenue Leakage Prevention",
+      "Modifier & Compliance Accuracy",
+      "Pre-Submission QA Review"
+    ],
+    cta: "Learn More",
+    link: "/services/charge-capturing",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+  }, 
   {
     image: eligibility,
     title: "Eligibility Verification",

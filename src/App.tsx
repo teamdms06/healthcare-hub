@@ -24,7 +24,7 @@ import ICDCoding from "./pages/services/ICDCoding";
 import CPTCoding from "./pages/services/CPTCoding";
 import HCCCoding from "./pages/services/HCCCoding";
 import Credentialing from "./pages/services/Credentialing";
-import AppointmentScheduling from "./pages/services/AppointmentScheduling";
+import PatientAppointmentScheduling from "./pages/services/PatientAppointmentScheduling";
 import EligibilityVerification from "./pages/services/EligibilityVerification";
 import ChargeCapturing from "./pages/services/ChargeCapturing";
 import ClaimAudits from "./pages/services/ClaimAudits";
@@ -98,7 +98,7 @@ const App = () => (
           <Route path="/services/provider-group-credentialing" element={<Credentialing />} />
           <Route path="/services/appointment-scheduling" element={<MedicalBilling />} />
           <Route path="/services/eligibility-verification" element={<EligibilityVerification />} />
-          <Route path="/services/charge-capturing" element={<MedicalBilling />} />
+          <Route path="/services/charge-capturing" element={<ChargeCapturing />} />
           <Route path="/services/claim-audits" element={<MedicalBilling />} />
           <Route path="/services/claim-submission" element={<MedicalBilling />} />
           <Route path="/services/payment-posting" element={<MedicalBilling />} />
@@ -129,6 +129,7 @@ const App = () => (
           <Route path="/services/startup-services" element={<StartupServices />} />
           <Route path="/services/satisfaction-survey" element={<SatisfactionSurvey />} />
           <Route path="/services/client-startups" element={<ClientStartups />} />
+          <Route path="/services/patient-appointment-scheduling" element={<PatientAppointmentScheduling />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

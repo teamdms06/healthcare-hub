@@ -70,7 +70,7 @@ const Navbar = () => {
       { name: "Provider & Group Credentialing", path: "/services/credentialing#combined" },
     ],
     billing: [
-      { name: "Patient Appointment Scheduling", path: "/services/medical-billing#appointment-scheduling" },
+      { name: "Patient Appointment Scheduling", path: "/services/patient-appointment-scheduling" },
       { name: "Eligibility Verification", path: "/services/eligibility-verification" },
       { name: "Charge Capturing & Entry", path: "/services/medical-billing#charge-capturing" },
       { name: "Claim Audits", path: "/services/medical-billing#claim-audits" },
