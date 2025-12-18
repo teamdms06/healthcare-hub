@@ -18,8 +18,23 @@ import contact from "@/assets/contact-center-hero.jpeg";
 import optometry from "@/assets/optometry-hero.jpeg";
 import eligibility from "@/assets/healthcare/eligibility.jpg";
 import chargecapture from "@/assets/healthcare/charge-capture.png";
+import chiropractic from "@/assets/healthcare/chiropractic-billing-service.png";
 
 const slides = [
+  {
+    image: chiropractic,
+    title: "Chiropractic Specialty Billing Services",
+    subtitle: "SIMPLIFY CHIROPRACTIC BILLING WITH ACCURATE CODING & FASTER REIMBURSEMENTS.",
+    points: [
+      "Accurate CPT & Modifier Coding for Chiropractic Services",
+      "Insurance Benefits Verification & Pre-Authorization",
+      "Electronic Claim Submission & Denial Management",
+      "CMS-Compliant Billing with Faster Payments"
+    ],
+    cta: "Learn More",
+    link: "/services/chiropractic-billing",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+  },
   {
     image: chargecapture,
     title: "Charge Capturing & Entry Services",
@@ -74,7 +89,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/mental-health-billing",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
   }, 
   {
     image: dental,
@@ -101,7 +116,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/medical-billing#appointment-scheduling",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: herocredit,

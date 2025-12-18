@@ -27,6 +27,7 @@ import Credentialing from "./pages/services/Credentialing";
 import PatientAppointmentScheduling from "./pages/services/PatientAppointmentScheduling";
 import EligibilityVerification from "./pages/services/EligibilityVerification";
 import ChargeCapturing from "./pages/services/ChargeCapturing";
+import ChiropracticBilling from "./pages/services/ChiropracticBilling";
 import ClaimAudits from "./pages/services/ClaimAudits";
 import ClaimSubmission from "./pages/services/ClaimSubmission";
 import PaymentPosting from "./pages/services/PaymentPosting";
@@ -113,7 +114,7 @@ const App = () => (
           <Route path="/services/dental-billing" element={<DentalBilling />} />
           <Route path="/services/mental-health-billing" element={<MentalHealthBilling/>} />
           <Route path="/services/optometry-billing" element={<OptometryBilling />} />
-          <Route path="/services/chiropractic-billing" element={<SpecialtyBilling />} />
+          <Route path="/services/chiropractic-billing" element={<ChiropracticBilling />} />
           <Route path="/services/client-strategies" element={<ClientStrategies />} />
           <Route path="/services/customer-care" element={<CustomerCare />} />
           <Route path="/services/omnichannel-communication" element={<OmnichannelCommunication />} />

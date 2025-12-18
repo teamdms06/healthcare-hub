@@ -72,7 +72,7 @@ const Navbar = () => {
     billing: [
       { name: "Patient Appointment Scheduling", path: "/services/patient-appointment-scheduling" },
       { name: "Eligibility Verification", path: "/services/eligibility-verification" },
-      { name: "Charge Capturing & Entry", path: "/services/medical-billing#charge-capturing" },
+      { name: "Charge Capturing & Entry", path: "/services/charge-capturing" },
       { name: "Claim Audits", path: "/services/medical-billing#claim-audits" },
       { name: "Claim Submission & Rejections", path: "/services/medical-billing#claim-submission" },
       { name: "Payment Posting", path: "/services/medical-billing#payment-posting" },
@@ -88,7 +88,7 @@ const Navbar = () => {
       { name: "Dental Specialty Billing", path: "/services/dental-billing" },
       { name: "Mental & Behavioral Health", path: "/services/mental-health-billing" },
       { name: "Optometry & Ophthalmology", path: "/services/optometry-billing" },
-      { name: "Chiropractic Specialty", path: "/services/specialty-billing#chiropractic" },
+      { name: "Chiropractic Specialty", path: "/services/chiropractic-billing" },
     ],
   };
 
