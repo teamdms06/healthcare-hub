@@ -73,7 +73,7 @@ const Navbar = () => {
       { name: "Patient Appointment Scheduling", path: "/services/patient-appointment-scheduling" },
       { name: "Eligibility Verification", path: "/services/eligibility-verification" },
       { name: "Charge Capturing & Entry", path: "/services/charge-capturing" },
-      { name: "Claim Audits", path: "/services/medical-billing#claim-audits" },
+      { name: "Claim Audits", path: "/services/claim-audits" },
       { name: "Claim Submission & Rejections", path: "/services/medical-billing#claim-submission" },
       { name: "Payment Posting", path: "/services/medical-billing#payment-posting" },
       { name: "Quality Reviews", path: "/services/medical-billing#quality-reviews" },

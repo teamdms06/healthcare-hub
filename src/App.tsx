@@ -100,7 +100,7 @@ const App = () => (
           <Route path="/services/appointment-scheduling" element={<MedicalBilling />} />
           <Route path="/services/eligibility-verification" element={<EligibilityVerification />} />
           <Route path="/services/charge-capturing" element={<ChargeCapturing />} />
-          <Route path="/services/claim-audits" element={<MedicalBilling />} />
+          <Route path="/services/claim-audits" element={<ClaimAudits />} />
           <Route path="/services/claim-submission" element={<MedicalBilling />} />
           <Route path="/services/payment-posting" element={<MedicalBilling />} />
           <Route path="/services/denial-management" element={<MedicalBilling />} />

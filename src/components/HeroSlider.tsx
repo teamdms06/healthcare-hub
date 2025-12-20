@@ -19,8 +19,23 @@ import optometry from "@/assets/optometry-hero.jpeg";
 import eligibility from "@/assets/healthcare/eligibility.jpg";
 import chargecapture from "@/assets/healthcare/charge-capture.png";
 import chiropractic from "@/assets/healthcare/chiropractic-billing-service.png";
+import assurance from "@/assets/healthcare/quality-assurance.avif";
 
 const slides = [
+{
+    image: assurance,
+    title: "Claim Audit & Compliance Services",
+    subtitle: "ENSURING CLEAN, COMPLIANT, AND ERROR-FREE CLAIM SUBMISSIONS.",
+    points: [
+      "Pre-Submission Claim Audits",
+      "Coding Accuracy & Documentation Validation",
+      "Compliance Verification & Risk Checks",
+      "95%+ Clean Claim Rate with Reduced Denials"
+    ],
+    cta: "Learn More",
+    link: "/services/claim-audits",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+  },  
   {
     image: chiropractic,
     title: "Chiropractic Specialty Billing Services",
@@ -61,7 +76,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/eligibility-verification",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
   }, 
   {
     image: optometry,
