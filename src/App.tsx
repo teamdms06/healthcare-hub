@@ -101,8 +101,8 @@ const App = () => (
           <Route path="/services/eligibility-verification" element={<EligibilityVerification />} />
           <Route path="/services/charge-capturing" element={<ChargeCapturing />} />
           <Route path="/services/claim-audits" element={<ClaimAudits />} />
-          <Route path="/services/claim-submission" element={<MedicalBilling />} />
-          <Route path="/services/payment-posting" element={<MedicalBilling />} />
+          <Route path="/services/claim-submission" element={<ClaimSubmission />} />
+          <Route path="/services/payment-posting" element={<PaymentPosting />} />
           <Route path="/services/denial-management" element={<MedicalBilling />} />
           <Route path="/services/quality-reviews" element={<MedicalBilling />} />
           <Route path="/services/insurance-follow-up" element={<MedicalBilling />} />

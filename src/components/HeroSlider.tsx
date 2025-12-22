@@ -20,9 +20,24 @@ import eligibility from "@/assets/healthcare/eligibility.jpg";
 import chargecapture from "@/assets/healthcare/charge-capture.png";
 import chiropractic from "@/assets/healthcare/chiropractic-billing-service.png";
 import assurance from "@/assets/healthcare/quality-assurance.avif";
+import claimSubmission from "@/assets/healthcare/claim-submission-hero.jpg";
 
 const slides = [
-{
+  {
+    image: claimSubmission,
+    title: "Claim Submission & Rejection Management Services",
+    subtitle: "STREAMLINING CLAIM SUBMISSION WITH FASTER APPROVALS & FEWER REJECTIONS.",
+    points: [
+      "Electronic Claim Submission",
+      "Instant Rejection Resolution",
+      "First-Pass Claim Focus",
+      "Accelerated Reimbursements"
+    ],
+    cta: "Learn More",
+    link: "/services/claim-submission",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+  },
+  {
     image: assurance,
     title: "Claim Audit & Compliance Services",
     subtitle: "ENSURING CLEAN, COMPLIANT, AND ERROR-FREE CLAIM SUBMISSIONS.",
@@ -35,7 +50,7 @@ const slides = [
     cta: "Learn More",
     link: "/services/claim-audits",
     show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
-  },  
+  },
   {
     image: chiropractic,
     title: "Chiropractic Specialty Billing Services",
@@ -63,7 +78,7 @@ const slides = [
     cta: "Learn More",
     link: "/services/charge-capturing",
     show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
-  }, 
+  },
   {
     image: eligibility,
     title: "Eligibility Verification",
@@ -77,7 +92,7 @@ const slides = [
     cta: "Learn More",
     link: "/services/eligibility-verification",
     show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
-  }, 
+  },
   {
     image: optometry,
     title: "Optometry & Ophthalmology Billing Services",
@@ -91,7 +106,7 @@ const slides = [
     cta: "Learn More",
     link: "/services/optometry-billing",
     show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
-  },   
+  },
   {
     image: mental,
     title: "Mental & Behavioral Health Billing Services",
@@ -105,7 +120,7 @@ const slides = [
     cta: "Learn More",
     link: "/services/mental-health-billing",
     show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
-  }, 
+  },
   {
     image: dental,
     title: "Dental Specialty Billing Services",
@@ -119,8 +134,8 @@ const slides = [
     cta: "Learn More",
     link: "/services/specialty-billing#dental",
     show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
-  },  
-    {
+  },
+  {
     image: patient,
     title: "Patient Appointment Scheduling",
     subtitle: "Seamless coordination between patients and providers through efficient, real-time scheduling.",
@@ -187,7 +202,7 @@ const slides = [
     show: false, // ✅ visible  || ❌ hidden (still in array but not shown)      
   },
   /// BPO Slides Below ///
-    {
+  {
     image: contact,
     title: "Customer Care That Never Stops",
     subtitle: "DELIVER ROUND-THE-CLOCK SUPPORT WITH A TEAM THAT HANDLES EVERY CHANNEL, EVERY SHIFT AND EVERY CUSTOMER—WITHOUT DOWNTIME.",
@@ -215,13 +230,13 @@ const slides = [
     link: "/services/contact-centre",
     show: false, // ✅ visible  || ❌ hidden (still in array but not shown)      
   },
-    {
+  {
     image: financial,
     title: "Financial Services BPO Solutions",
     subtitle: "Secure and compliant outsourcing solutions for banks, insurance companies, and financial institutions.",
     points: [
-      "Customer Support","Claims Processing",
-      "Fraud Detection","Account Management"
+      "Customer Support", "Claims Processing",
+      "Fraud Detection", "Account Management"
     ],
     cta: "Learn More",
     link: "/industries",
@@ -261,8 +276,8 @@ const slides = [
 ];
 
 const HeroSlider = () => {
-  
-  const visibleSlides = slides.filter((slide) => slide.show);  
+
+  const visibleSlides = slides.filter((slide) => slide.show);
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -276,12 +291,12 @@ const HeroSlider = () => {
   }, [visibleSlides.length]);
 
   const nextSlide = () => {
-    if (!visibleSlides.length) return;    
+    if (!visibleSlides.length) return;
     setCurrentSlide((prev) => (prev + 1) % visibleSlides.length);
   };
 
   const prevSlide = () => {
-    if (!visibleSlides.length) return;    
+    if (!visibleSlides.length) return;
     setCurrentSlide((prev) => (prev - 1 + visibleSlides.length) % visibleSlides.length);
   };
 
@@ -290,9 +305,8 @@ const HeroSlider = () => {
       {visibleSlides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+            }`}
         >
           {/* Unified Overlay Layout for all slides */}
           <>
@@ -330,7 +344,7 @@ const HeroSlider = () => {
                     String(slide.title)
                   )}
                 </h1>
-                
+
                 {/* Key Points */}
                 {slide.points && (
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
@@ -379,9 +393,8 @@ const HeroSlider = () => {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`h-3 rounded-full transition-all ${
-              index === currentSlide ? "bg-accent w-12" : "bg-primary-foreground/40 w-3 hover:bg-primary-foreground/60"
-            }`}
+            className={`h-3 rounded-full transition-all ${index === currentSlide ? "bg-accent w-12" : "bg-primary-foreground/40 w-3 hover:bg-primary-foreground/60"
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

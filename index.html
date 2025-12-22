@@ -1,94 +1,470 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.webp" type="image/webp" />
+    <title>The-Connections | Healthcare BPO Services - Quality & Value Delivered Together</title>
+    <meta name="description" content="Leading healthcare BPO provider offering medical coding, billing, patient support, and telehealth services. Based in Pune & Bangalore. 99.8% accuracy, 24/7 support." />
+    <meta name="author" content="The-Connections" />
+    <meta name="keywords" content="healthcare BPO, medical coding, medical billing, patient support, telehealth, revenue cycle management, HIPAA compliant, healthcare analytics" />
 
-<head>
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "The-Connections",
-        "url": "https://www.the-connections.com/",
-        "logo": "https://www.the-connections.com/favicon.webp",
-        "description": "Leading healthcare & BPO service provider offering Mental Health, Optometry, Ophthalmology, Dental, Chiropractic, Dermatology & Gastroenterology Billing, Credentialing, Medical Coding & Audit Services across the USA.",
-        "sameAs": [
-          "https://www.facebook.com/theconnectionshealthcare",
-          "https://www.linkedin.com/company/the-connections-healthcare/"
-        ],
-        "contactPoint": [{
-          "@type": "ContactPoint",
-          "telephone": "+1-800-123-4567",
-          "contactType": "customer service",
-          "areaServed": "US",
-          "availableLanguage": ["English"]
-        }],
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "US"
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https: https://embed.tawk.to; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https: https://*.tawk.to; frame-src 'self' https://*.tawk.to; frame-ancestors 'self';" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <meta property="og:title" content="The-Connections | Healthcare BPO Excellence" />
+    <meta property="og:description" content="Transform your healthcare operations with expert BPO services. Medical coding, billing, and patient support with 99.8% accuracy." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!--AI Chatbot Script-->
+    <script>
+      /* Initialize chatbot on DOM load */
+      document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(initChatbot, 500);
+      });
+
+      /* Supabase configuration */
+      const SUPABASE_URL = "https://whqxdwomtodzcfophupe.supabase.co";
+      const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndocXhkd29tdG9kemNmb3BodXBlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjYzOTIwODEsImV4cCI6MjA4MTk2ODA4MX0.5B5-zGW_IocOtqXBjXsfxaSPRQj2CmMWn3oa6D3cMn0";
+
+      /* Conversation history for context */
+      let conversationHistory = [];
+
+      /* ---------------------------------------------------------
+        Build Responsive AI Chatbot UI
+      --------------------------------------------------------- */
+      function initChatbot() {
+        /* Floating Button */
+        const button = document.createElement("div");
+        button.innerHTML = "💬";
+        Object.assign(button.style, {
+          position: "fixed",
+          bottom: "20px",
+          right: "20px",
+          width: "60px",
+          height: "60px",
+          background: "linear-gradient(135deg, #00a651, #008040)",
+          color: "#fff",
+          borderRadius: "50%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          fontSize: "30px",
+          cursor: "pointer",
+          boxShadow: "0 4px 20px rgba(0,166,81,0.4)",
+          zIndex: "9999",
+          transition: "transform 0.2s ease, box-shadow 0.2s ease"
+        });
+        button.onmouseover = () => {
+          button.style.transform = "scale(1.1)";
+          button.style.boxShadow = "0 6px 25px rgba(0,166,81,0.5)";
+        };
+        button.onmouseout = () => {
+          button.style.transform = "scale(1)";
+          button.style.boxShadow = "0 4px 20px rgba(0,166,81,0.4)";
+        };
+        document.body.appendChild(button);
+
+        /* Chat Window */
+        const chat = document.createElement("div");
+        Object.assign(chat.style, {
+          position: "fixed",
+          bottom: "90px",
+          right: "20px",
+          width: "90vw",
+          maxWidth: "400px",
+          height: "75vh",
+          maxHeight: "600px",
+          background: "white",
+          borderRadius: "20px",
+          boxShadow: "0 10px 40px rgba(0,0,0,0.2)",
+          display: "flex",
+          flexDirection: "column",
+          opacity: "0",
+          transform: "translateY(500px) scale(0.95)",
+          transition: "0.35s cubic-bezier(0.4, 0, 0.2, 1)",
+          zIndex: "9998",
+          overflow: "hidden"
+        });
+        document.body.appendChild(chat);
+
+        /* Header */
+        const header = document.createElement("div");
+        header.innerHTML = `
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px;background:linear-gradient(135deg, #00a651, #008040);color:white;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div style="width:40px;height:40px;background:rgba(255,255,255,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;">🤖</div>
+              <div>
+                <div style="font-size:16px;font-weight:600;">AI Assistant</div>
+                <div style="font-size:12px;opacity:0.9;">Powered by AI • Online</div>
+              </div>
+            </div>
+            <span id="closeChat" style="cursor:pointer;font-size:24px;opacity:0.9;transition:opacity 0.2s;">×</span>
+          </div>
+        `;
+        chat.appendChild(header);
+
+        /* Messages */
+        const messages = document.createElement("div");
+        Object.assign(messages.style, {
+          flex: "1",
+          padding: "16px",
+          overflowY: "auto",
+          background: "linear-gradient(180deg, #f0f4f8, #ffffff)",
+          display: "flex",
+          flexDirection: "column",
+          gap: "12px"
+        });
+        chat.appendChild(messages);
+
+        /* Parse markdown links and format message */
+        function parseMessage(text) {
+          // Convert markdown links [text](/path) to clickable buttons
+          const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+          let formattedText = text;
+          const links = [];
+          let match;
+          
+          while ((match = linkRegex.exec(text)) !== null) {
+            links.push({ text: match[1], url: match[2] });
+            formattedText = formattedText.replace(match[0], `<span class="chat-link-placeholder" data-url="${match[2]}">${match[1]}</span>`);
+          }
+          
+          // Convert **bold** to strong tags
+          formattedText = formattedText.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+          
+          // Convert line breaks
+          formattedText = formattedText.replace(/\n/g, '<br>');
+          
+          return { formattedText, links };
         }
+
+        function addMessage(text, from, isTyping = false) {
+          const wrapper = document.createElement("div");
+          Object.assign(wrapper.style, {
+            display: "flex",
+            flexDirection: "column",
+            alignItems: from === "user" ? "flex-end" : "flex-start",
+            animation: "fadeIn 0.3s ease",
+            gap: "8px"
+          });
+
+          const div = document.createElement("div");
+          Object.assign(div.style, {
+            background: from === "user" 
+              ? "linear-gradient(135deg, #00a651, #008040)" 
+              : "white",
+            color: from === "user" ? "white" : "#333",
+            padding: "14px 18px",
+            borderRadius: from === "user" ? "20px 20px 4px 20px" : "20px 20px 20px 4px",
+            maxWidth: "85%",
+            fontSize: "14px",
+            lineHeight: "1.6",
+            boxShadow: from === "user" ? "0 2px 8px rgba(0,166,81,0.2)" : "0 3px 12px rgba(0,0,0,0.08)",
+            border: from === "user" ? "none" : "1px solid #e5e7eb"
+          });
+          
+          if (isTyping) {
+            div.innerHTML = `<div style="display:flex;gap:5px;padding:6px 10px;">
+              <span style="width:10px;height:10px;background:linear-gradient(135deg, #00a651, #008040);border-radius:50%;animation:bounce 1s infinite;animation-delay:0s;"></span>
+              <span style="width:10px;height:10px;background:linear-gradient(135deg, #00a651, #008040);border-radius:50%;animation:bounce 1s infinite;animation-delay:0.2s;"></span>
+              <span style="width:10px;height:10px;background:linear-gradient(135deg, #00a651, #008040);border-radius:50%;animation:bounce 1s infinite;animation-delay:0.4s;"></span>
+            </div>`;
+            div.id = "typing-indicator";
+          } else if (from === "bot") {
+            const { formattedText, links } = parseMessage(text);
+            div.innerHTML = formattedText;
+            
+            // Style inline link placeholders
+            div.querySelectorAll('.chat-link-placeholder').forEach(el => {
+              Object.assign(el.style, {
+                color: '#00a651',
+                fontWeight: '600',
+                cursor: 'pointer',
+                textDecoration: 'underline',
+                textDecorationStyle: 'dotted'
+              });
+              el.onclick = (e) => {
+                e.preventDefault();
+                window.location.href = el.dataset.url;
+              };
+            });
+            
+            // Add button links at the bottom
+            if (links.length > 0) {
+              const buttonsContainer = document.createElement("div");
+              Object.assign(buttonsContainer.style, {
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "8px",
+                marginTop: "4px"
+              });
+              
+              links.forEach(link => {
+                const btn = document.createElement("a");
+                btn.href = link.url;
+                btn.textContent = link.text;
+                Object.assign(btn.style, {
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  padding: "8px 14px",
+                  background: "linear-gradient(135deg, #00a651, #008040)",
+                  color: "white",
+                  borderRadius: "20px",
+                  fontSize: "12px",
+                  fontWeight: "600",
+                  textDecoration: "none",
+                  boxShadow: "0 2px 8px rgba(0,166,81,0.3)",
+                  transition: "transform 0.2s, box-shadow 0.2s"
+                });
+                btn.onmouseover = () => {
+                  btn.style.transform = "translateY(-2px)";
+                  btn.style.boxShadow = "0 4px 12px rgba(0,166,81,0.4)";
+                };
+                btn.onmouseout = () => {
+                  btn.style.transform = "translateY(0)";
+                  btn.style.boxShadow = "0 2px 8px rgba(0,166,81,0.3)";
+                };
+                buttonsContainer.appendChild(btn);
+              });
+              
+              wrapper.appendChild(div);
+              wrapper.appendChild(buttonsContainer);
+              messages.appendChild(wrapper);
+              messages.scrollTop = messages.scrollHeight;
+              return wrapper;
+            }
+          } else {
+            div.textContent = text;
+          }
+          
+          wrapper.appendChild(div);
+          messages.appendChild(wrapper);
+          messages.scrollTop = messages.scrollHeight;
+          
+          return wrapper;
+        }
+
+        function removeTypingIndicator() {
+          const typing = document.getElementById("typing-indicator");
+          if (typing) typing.parentElement.remove();
+        }
+
+        // Add CSS animations
+        const style = document.createElement("style");
+        style.textContent = `
+          @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+          @keyframes bounce {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-8px); }
+          }
+                 @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+          }
+          .quick-btn:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 4px 12px rgba(0,166,81,0.3) !important;
+          }
+        `;
+        document.head.appendChild(style);
+
+        addMessage("👋 Hi! I'm your AI assistant for **The Connections**. I can help you learn about our [Healthcare Services](/healthcare-services) and [BPO Services](/industries). What would you like to know?", "bot");
+
+        /* Quick suggestion buttons */
+        const quickSuggestions = document.createElement("div");
+        Object.assign(quickSuggestions.style, {
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "8px",
+          padding: "12px 16px",
+          background: "rgba(0,166,81,0.05)",
+          borderBottom: "1px solid #e5e7eb"
+        });
+
+        const suggestions = [
+          { text: "💼 All Services", query: "What services do you offer?" },
+          { text: "💰 Pricing Info", query: "Tell me about your pricing models" },
+          { text: "🏥 Medical Billing", query: "Tell me about medical billing services" },
+          { text: "📞 Contact Team", query: "How can I contact your team?" }
+        ];
+
+        suggestions.forEach(s => {
+          const btn = document.createElement("button");
+          btn.textContent = s.text;
+          btn.className = "quick-btn";
+          Object.assign(btn.style, {
+            padding: "8px 14px",
+            background: "white",
+            border: "1.5px solid #00a651",
+            borderRadius: "20px",
+            color: "#00a651",
+            fontSize: "12px",
+            fontWeight: "600",
+            cursor: "pointer",
+            transition: "all 0.2s ease",
+            whiteSpace: "nowrap"
+          });
+          btn.onclick = () => {
+            input.value = s.query;
+            sendMessage();
+          };
+          quickSuggestions.appendChild(btn);
+        });
+
+        messages.parentNode.insertBefore(quickSuggestions, messages);
+        /* Input Area */
+        const inputWrap = document.createElement("div");
+        Object.assign(inputWrap.style, {
+          padding: "16px",
+          borderTop: "1px solid #e5e7eb",
+          background: "#fff",
+          display: "flex",
+          gap: "10px"
+        });
+
+        const input = document.createElement("input");
+        Object.assign(input.style, {
+          flex: "1",
+          padding: "12px 16px",
+          borderRadius: "24px",
+          border: "2px solid #e5e7eb",
+          outline: "none",
+          fontSize: "14px",
+          transition: "border-color 0.2s"
+        });
+        input.placeholder = "Ask me anything...";
+        input.onfocus = () => input.style.borderColor = "#00a651";
+        input.onblur = () => input.style.borderColor = "#e5e7eb";
+        inputWrap.appendChild(input);
+
+        const sendBtn = document.createElement("button");
+        Object.assign(sendBtn.style, {
+          width: "44px",
+          height: "44px",
+          borderRadius: "50%",
+          border: "none",
+          background: "linear-gradient(135deg, #00a651, #008040)",
+          color: "white",
+          fontSize: "18px",
+          cursor: "pointer",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          transition: "transform 0.2s, opacity 0.2s"
+        });
+        sendBtn.innerHTML = "➤";
+        sendBtn.onmouseover = () => sendBtn.style.transform = "scale(1.1)";
+        sendBtn.onmouseout = () => sendBtn.style.transform = "scale(1)";
+        inputWrap.appendChild(sendBtn);
+
+        chat.appendChild(inputWrap);
+
+        /* Chat toggle behavior */
+        let open = false;
+        button.onclick = toggleChat;
+        header.querySelector("#closeChat").onclick = toggleChat;
+        header.querySelector("#closeChat").onmouseover = (e) => e.target.style.opacity = "1";
+        header.querySelector("#closeChat").onmouseout = (e) => e.target.style.opacity = "0.9";
+
+        function toggleChat() {
+          open = !open;
+          chat.style.opacity = open ? "1" : "0";
+          chat.style.transform = open ? "translateY(0) scale(1)" : "translateY(500px) scale(0.95)";
+          if (open) input.focus();
+        }
+
+        /* AI Answer function */
+        async function getAIAnswer(userMessage) {
+          try {
+            const response = await fetch(`${SUPABASE_URL}/functions/v1/ai-chatbot`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${SUPABASE_ANON_KEY}`
+              },
+              body: JSON.stringify({
+                message: userMessage,
+                conversationHistory: conversationHistory
+              })
+            });
+
+            const data = await response.json();
+            
+            // Add to conversation history
+            conversationHistory.push({ role: 'user', content: userMessage });
+            conversationHistory.push({ role: 'assistant', content: data.reply });
+            
+            // Keep history manageable
+            if (conversationHistory.length > 20) {
+              conversationHistory = conversationHistory.slice(-20);
+            }
+
+            return data.reply || "I apologize, I couldn't process that. Please try again!";
+          } catch (error) {
+            console.error('Chatbot error:', error);
+            return "I'm having trouble connecting right now. Please try again or visit our contact page for direct assistance!";
+          }
+        }
+
+        /* Send message handler */
+        async function sendMessage() {
+          const text = input.value.trim();
+          if (!text) return;
+
+          addMessage(text, "user");
+          input.value = "";
+          input.disabled = true;
+          sendBtn.disabled = true;
+          sendBtn.style.opacity = "0.5";
+
+          addMessage("", "bot", true); // Show typing indicator
+
+          const reply = await getAIAnswer(text);
+          
+          removeTypingIndicator();
+          addMessage(reply, "bot");
+          
+          input.disabled = false;
+          sendBtn.disabled = false;
+          sendBtn.style.opacity = "1";
+          input.focus();
+        }
+
+        /* Event listeners */
+        input.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" && !input.disabled) {
+            sendMessage();
+          }
+        });
+
+        sendBtn.addEventListener("click", () => {
+          if (!sendBtn.disabled) {
+            sendMessage();
+          }
+        });
       }
     </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "The-Connections Healthcare & BPO Services",
-        "url": "https://www.the-connections.com/",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://www.the-connections.com/?s={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      }
-    </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/favicon.webp" type="image/webp" />
-  <title>The-Connections | Healthcare & BPO Services Delivering Quality & Value</title>
-  <meta name="description"
-    content="Leading healthcare & BPO service provider offering Mental Health, Optometry, Ophthalmology, Dental, Chiropractic, Dermatology & Gastroenterology Billing, plus Credentialing, Medical Coding & Audit Services. Available in New York, Florida, Texas & across the USA. 99.8% accuracy." />
-  <meta name="author" content="The-Connections" />
-  <meta name="keywords"
-    content="Mental Health Billing Services, Mental Health Billing Services in New York, psychiatric billing services in florida, Psychiatry Health Medical Billing Services in Pennsylvania, Top Mental Health Billing Services in Texas, Behavioral and Mental Health Medical Billing Services in New York, Optometry Billing Services, Optometry Billing Services in US, Optometry revenue cycle management in new york, Best Optometry Medical Billing Services in Florida, Optometry Medical Billing Services in Pennsylvania, Optometry Medical Billing in Texas, Best Optometry Medical Billing Services in California, Ophthalmology Billing Services, Top Ophthalmology Medical Billing Services in New York, Ophthalmology billing services in the USA, Top Ophthalmology Medical Billing Services in Texas, Best Ophthalmology Medical Billing Services in Pennsylvania, Ophthalmology Medical Billing Service in California, Ophthalmology medical billing services in Florida, Dental Billing Services, dental billing company in new york, Dental Revenue Cycle Management in new york, dental billing and coding in new jersey, Dental Billing Services in New York, dental medical billing specialist in the usa, Chiropractic Billing Services, Chiropractic Billing Specialist, top chiropractic billing services pennsylvania, chiropractic billing and coding services, chiropractic billing services california, Best Chiropractic Billing Services in New York, chiropractic billing specialist in Texas, chiropractic billing specialist in florida, Dermatology Medical Billing Services, dermatology billing specialist in the USA, Best dermatology billing specialist in the USA, dermatology medical billing in new york, dermatology payment solution, Gastroenterology Billing Services, Gastroenterology Billing Services in the USA, gastroenterology billing and coding services, Top gastroenterology billing solutions in the usa, gastroenterology medical billing companies, Medical Credentialing Services, Certified provider credentialing specialist, Best provider credentialing specialist in new york, best provider credentialing software, medicaid provider credentialing, Individual Provider Credentialing, Group Credentialing Services in usa, Medical Coding and Audit Services, outsource icd-10 coding services, icd-10 coding company in usa, hierarchical condition category in new york, Medical Coding Outsourcing Services in florida, group therapy cpt code, gastroenterology billing services, gastroenterology billing & coding services, gastroenterology billing companies, gastroenterology medical billing services in usa, best gastroenterology billing in new york, Medical Billing Services, medical billing and coding services, Claim Audit Services in new york, Patient eligibility verification services provider, best scheduling patient appointments, ai patient appointment scheduling" />
-
-  <!-- Security Headers -->
-  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
-  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
-  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains" />
-  <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https: https://embed.tawk.to; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https: https://*.tawk.to; frame-src 'self' https://*.tawk.to; frame-ancestors 'self';" />
-  <meta name="referrer" content="strict-origin-when-cross-origin" />
-
-  <meta property="og:title" content="The-Connections | Healthcare Service Excellence" />
-  <meta property="og:description"
-    content="Transform your healthcare operations with expert BPO services. Medical coding, billing, and patient support with 99.8% accuracy." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@lovable_dev" />
-  <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HLED1SGMSK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'G-HLED1SGMSK');
-</script>
-
-<body>
-  <div id="root"></div>
-
-  <script type="module" src="/src/main.tsx"></script>
-  <!-- The Connections Chatbot Script -->
-  <script src="/chatbot.js"></script>
-
-  <!-- The Connections Chatbot Script moved to /public/chatbot.js -->
-  <!-- <script type="text/javascript">
+    <!-- <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
       var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -99,7 +475,6 @@
       s0.parentNode.insertBefore(s1,s0);
     })();
     </script> -->
-  <!--End of Tawk.to Script-->
-</body>
-
+    <!--End of Tawk.to Script-->
+  </body>
 </html>

@@ -127,7 +127,7 @@ const Contact = () => {
                         +91 788-789-8196
                       </a>
                       <p className="text-xs text-muted-foreground mt-2">
-                        Available Monday - Friday,9:30 AM - 6:30 PM IST
+                        Available Monday - Saturday,9:30 AM - 6:30 PM IST
                       </p>
                     </div>
                   </div>
@@ -189,7 +189,7 @@ const Contact = () => {
                         </div>
                       </div>
                       <p className="text-xs text-muted-foreground mt-2">
-                        * 24/7 support available for existing clients
+                        * 24/7 operational coverage aligned with project requirement
                       </p>
                     </div>
                   </div>
