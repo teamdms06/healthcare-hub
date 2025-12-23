@@ -103,10 +103,10 @@ const App = () => (
           <Route path="/services/claim-audits" element={<ClaimAudits />} />
           <Route path="/services/claim-submission" element={<ClaimSubmission />} />
           <Route path="/services/payment-posting" element={<PaymentPosting />} />
-          <Route path="/services/denial-management" element={<MedicalBilling />} />
-          <Route path="/services/quality-reviews" element={<MedicalBilling />} />
-          <Route path="/services/insurance-follow-up" element={<MedicalBilling />} />
-          <Route path="/services/business-analysis" element={<MedicalBilling />} />
+          <Route path="/services/denial-management" element={<DenialManagement />} />
+          <Route path="/services/quality-reviews" element={<QualityReviews />} />
+          <Route path="/services/insurance-follow-up" element={<InsuranceFollowUp />} />
+          <Route path="/services/business-analysis" element={<BusinessAnalysis />} />
           <Route path="/services/account-receivable" element={<MedicalBilling />} />
           <Route path="/services/prior-authorization" element={<MedicalBilling />} />
           <Route path="/services/prescription-authorization" element={<MedicalBilling />} />
