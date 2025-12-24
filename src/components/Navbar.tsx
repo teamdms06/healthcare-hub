@@ -80,9 +80,9 @@ const Navbar = () => {
       { name: "Insurance Follow Up", path: "/services/insurance-follow-up" },
       { name: "Denial Management", path: "/services/denial-management" },
       { name: "Business Analysis & Quality Reporting", path: "/services/business-analysis" },
-      { name: "Account Receivable", path: "/services/medical-billing#account-receivable" },
-      { name: "Prior Authorization", path: "/services/medical-billing#prior-authorization" },
-      { name: "Prescription Prior Authorization", path: "/services/medical-billing#prescription-authorization" },
+      { name: "Account Receivable", path: "/services/account-receivable" },
+      { name: "Prior Authorization", path: "/services/prior-authorization" },
+      { name: "Prescription Prior Authorization", path: "/services/prescription-authorization" },
     ],
     specialty: [
       { name: "Dental Specialty Billing", path: "/services/dental-billing" },

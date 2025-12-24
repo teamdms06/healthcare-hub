@@ -25,6 +25,20 @@ import claimSubmission from "@/assets/healthcare/claim-submission-hero.jpg";
 const slides = [
   {
     image: claimSubmission,
+    title: "Payment Posting in Medical Billing",
+    subtitle: "ENSURING ACCURATE PAYMENT POSTING WITH COMPLETE FINANCIAL TRANSPARENCY",
+    points: [
+      "EOB & ERA Reconciliation",
+      "Real-Time Payment Posting",
+      "Accurate Payment Allocation",
+      "Clear Financial Visibility & Reporting"
+    ],
+    cta: "Learn More",
+    link: "/services/payment-posting",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+  },
+  {
+    image: claimSubmission,
     title: "Claim Submission & Rejection Management Services",
     subtitle: "STREAMLINING CLAIM SUBMISSION WITH FASTER APPROVALS & FEWER REJECTIONS.",
     points: [
