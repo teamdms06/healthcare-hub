@@ -35,7 +35,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/payment-posting",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: claimSubmission,
@@ -49,7 +49,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/claim-submission",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: assurance,
@@ -63,7 +63,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/claim-audits",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: chiropractic,
@@ -77,7 +77,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/chiropractic-billing",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: chargecapture,
@@ -91,7 +91,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/charge-capturing",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: eligibility,
@@ -133,7 +133,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/mental-health-billing",
-    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: dental,
@@ -187,7 +187,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/icd-coding",
-    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)     
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)     
   },
   {
     image: herocpt,
@@ -200,7 +200,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/cpt-coding",
-    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)    
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)    
   },
   {
     image: herohcc,
@@ -213,7 +213,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/hcc-coding",
-    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)      
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)      
   },
   /// BPO Slides Below ///
   {
