@@ -119,7 +119,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/optometry-billing",
-    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: mental,
