@@ -27,6 +27,17 @@ import heroImage from "@/assets/heroes/what-we-do-hero.jpg";
 import acquisitionServiceImg from "@/assets/menu/acquisition-service.jpg";
 import satisfactionSurveyImg from "@/assets/menu/satisfaction-survey.jpg";
 import vipManagementImg from "@/assets/menu/vip-management.jpg";
+import healthcareRcmImg from "@/assets/menu/healthcare-rcm.jpg";
+import consultingImg from "@/assets/menu/consulting.jpg";
+import customerCareImg from "@/assets/menu/customer-care.jpg";
+import contactCentreImg from "@/assets/menu/contact-center.jpeg";
+import salesLeakageImg from "@/assets/menu/sales-leakage.jpg";
+import amcManagementImg from "@/assets/menu/amc-management.jpg";
+import invoiceManagementImg from "@/assets/menu/invoice-management.jpg";
+import marketSurveyImg from "@/assets/menu/market-survey.jpg";
+import backOfficeImg from "@/assets/menu/back-office.jpg";
+import databaseAnalyticsImg from "@/assets/menu/database-analytics.jpg";
+import startupsImg from "@/assets/menu/startups.jpg";
 
 const WhatWeDo = () => {
   const services = [
@@ -80,15 +91,12 @@ const WhatWeDo = () => {
       <Navbar />
 
       {/* Hero Section */}
-      {/* <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-primary/90">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-accent/20 via-transparent to-transparent"></div>
-        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]"></div> */}
       <section className="relative overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroImage})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />        
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
         <div className="relative container mx-auto px-4 py-32 md:py-40">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4">
@@ -113,7 +121,8 @@ const WhatWeDo = () => {
       </section>
 
       {/* Healthcare Revenue Cycle Management */}
-      <section className="py-20 md:py-32 bg-muted/30 relative">
+
+<section className="py-20 md:py-32 bg-muted/30 relative">
         <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent"></div>
         <div className="container mx-auto px-4 relative">
           <div className="text-center mb-16 space-y-4">
@@ -135,14 +144,14 @@ const WhatWeDo = () => {
                 asChild 
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 rounded-xl shadow-[var(--shadow-md)] hover:shadow-[var(--shadow-accent)] transition-all duration-300 hover:-translate-y-1"
               >
-                <Link to="/healthcare-services">Learn More</Link>
+                <Link to="/services/customer-care">Learn More</Link>
               </Button>
             </div>
             <div className="group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop" 
-                  alt="Healthcare Revenue Cycle Management" 
+                  src={healthcareRcmImg} 
+                  alt="Customer Care Services"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -151,6 +160,7 @@ const WhatWeDo = () => {
           </div>
         </div>
       </section>
+
 
       {/* CX Strategies & Consulting */}
       <section className="py-20 md:py-32 relative">
@@ -163,8 +173,8 @@ const WhatWeDo = () => {
             <div className="order-2 md:order-1 group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i0.wp.com/The Connections.com/wp-content/uploads/2020/07/tm-post-three.jpg?w=847&ssl=1" 
-                  alt="Clinet Strategies and Consulting" 
+                  src={consultingImg} 
+                  alt="Client Strategies and Consulting" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -220,7 +230,7 @@ const WhatWeDo = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i1.wp.com/The Connections.com/wp-content/uploads/2020/06/post-0083.jpg?w=847&ssl=1" 
+                  src={customerCareImg} 
                   alt="Customer Care Services"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -332,7 +342,7 @@ const WhatWeDo = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i0.wp.com/The Connections.com/wp-content/uploads/2020/08/tm-blog02.jpg?w=847&ssl=1" 
+                  src={contactCentreImg} 
                   alt="Contact Centre Software"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -354,7 +364,7 @@ const WhatWeDo = () => {
             <div className="order-2 md:order-1 group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src={acquisitionServiceImg}
+                  src={acquisitionServiceImg} 
                   alt="Customer Acquisition" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -411,7 +421,7 @@ const WhatWeDo = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i0.wp.com/The Connections.com/wp-content/uploads/2020/07/tm-post-one.jpg?w=847&ssl=1" 
+                  src={salesLeakageImg} 
                   alt="Sales Leakage Prevention"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -484,7 +494,7 @@ const WhatWeDo = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i0.wp.com/The Connections.com/wp-content/uploads/2020/11/image1.png?w=847&ssl=1" 
+                  src={amcManagementImg} 
                   alt="AMC Management" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -557,7 +567,7 @@ const WhatWeDo = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i2.wp.com/The Connections.com/wp-content/uploads/2020/11/image2-1.png?w=847&ssl=1" 
+                  src={invoiceManagementImg} 
                   alt="Invoices Management"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -579,7 +589,7 @@ const WhatWeDo = () => {
             <div className="order-2 md:order-1 group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i1.wp.com/The Connections.com/wp-content/uploads/2020/06/tm-blogdetail-two.jpg?w=847&ssl=1" 
+                  src={marketSurveyImg} 
                   alt="Market Survey & Analysis" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -630,7 +640,7 @@ const WhatWeDo = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i1.wp.com/The Connections.com/wp-content/uploads/2020/06/tm-services-four.jpg?w=847&ssl=1" 
+                  src={backOfficeImg} 
                   alt="Back Office Support" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -652,7 +662,7 @@ const WhatWeDo = () => {
             <div className="order-2 md:order-1 group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i2.wp.com/The Connections.com/wp-content/uploads/2020/11/image3.png?w=847&ssl=1" 
+                  src={databaseAnalyticsImg} 
                   alt="Client Database Analytics" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -703,7 +713,7 @@ const WhatWeDo = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i1.wp.com/The Connections.com/wp-content/uploads/2020/11/image4.png?w=847&ssl=1" 
+                  src={startupsImg} 
                   alt="Client for Startups" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
