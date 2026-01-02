@@ -7,8 +7,8 @@ const TermsOfUse = () => {
   return (
     <>
       <Helmet>
-        <title>Terms of Use | The-Connections - Healthcare Services Agreement</title>
-        <meta name="description" content="The-Connections Terms of Use. Review our service terms, HIPAA compliance, and Business Associate Agreement provisions for healthcare BPO services." />
+        <title>Terms of Use | The Connections - Healthcare Services Agreement</title>
+        <meta name="description" content="The Connections Terms of Use. Review our service terms, HIPAA compliance, and Business Associate Agreement provisions for healthcare BPO services." />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">
@@ -42,11 +42,11 @@ const TermsOfUse = () => {
                 <div className="mb-12">
                   <div className="bg-accent/10 border-l-4 border-accent p-6 rounded mb-6">
                     <p className="text-foreground">
-                      <strong>PLEASE READ THESE TERMS CAREFULLY.</strong> By accessing or using The-Connections website and services, you agree to be bound by these Terms of Use. If you do not agree, please discontinue use immediately.
+                      <strong>PLEASE READ THESE TERMS CAREFULLY.</strong> By accessing or using The Connections website and services, you agree to be bound by these Terms of Use. If you do not agree, please discontinue use immediately.
                     </p>
                   </div>
                   <p className="text-lg text-muted-foreground">
-                    These Terms of Use ("Terms") govern your access to and use of The-Connections services, website, and related platforms. These Terms constitute a legally binding agreement between you ("Client," "you") and The-Connections ("we," "us," "our").
+                    These Terms of Use ("Terms") govern your access to and use of The Connections services, website, and related platforms. These Terms constitute a legally binding agreement between you ("Client," "you") and The Connections ("we," "us," "our").
                   </p>
                 </div>
 
@@ -80,7 +80,7 @@ const TermsOfUse = () => {
                   </div>
                   
                   <p className="text-muted-foreground mb-4">
-                    The-Connections provides healthcare services, including but not limited to:
+                    The Connections provides healthcare services, including but not limited to:
                   </p>
                   
                   <div className="grid md:grid-cols-2 gap-4 mb-6">
@@ -130,7 +130,7 @@ const TermsOfUse = () => {
                   <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-6">
                     <h3 className="font-semibold text-foreground mb-3">Business Associate Relationship</h3>
                     <p className="text-muted-foreground mb-3">
-                      The-Connections acts as a <strong>Business Associate</strong> under HIPAA when providing services that involve access to Protected Health Information (PHI). We comply with:
+                      The Connections acts as a <strong>Business Associate</strong> under HIPAA when providing services that involve access to Protected Health Information (PHI). We comply with:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                       <li>HIPAA Privacy Rule (45 CFR Part 160 and Subparts A and E of Part 164)</li>
@@ -220,7 +220,7 @@ const TermsOfUse = () => {
                   
                   <h3 className="text-xl font-semibold mb-3 text-foreground">Our Content</h3>
                   <p className="text-muted-foreground mb-4">
-                    All content, software, processes, and materials provided by The-Connections remain our exclusive property. This includes:
+                    All content, software, processes, and materials provided by The Connections remain our exclusive property. This includes:
                   </p>
                   <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
                     <li>Proprietary coding tools and methodologies</li>
@@ -275,7 +275,7 @@ const TermsOfUse = () => {
                 <div className="mb-12">
                   <h2 className="text-2xl font-bold mb-4 text-foreground">Indemnification</h2>
                   <p className="text-muted-foreground">
-                    You agree to indemnify and hold harmless The-Connections from any claims, damages, or expenses arising from:
+                    You agree to indemnify and hold harmless The Connections from any claims, damages, or expenses arising from:
                   </p>
                   <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                     <li>Your violation of these Terms</li>
@@ -323,7 +323,7 @@ const TermsOfUse = () => {
                   <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-6 space-y-3">
                     <p className="text-foreground"><strong>Not Medical Advice:</strong></p>
                     <p className="text-sm text-muted-foreground">
-                      The-Connections provides administrative support services only. We do not provide medical advice, diagnosis, or treatment recommendations. All clinical decisions remain the sole responsibility of licensed healthcare providers.
+                      The Connections provides administrative support services only. We do not provide medical advice, diagnosis, or treatment recommendations. All clinical decisions remain the sole responsibility of licensed healthcare providers.
                     </p>
                     
                     <p className="text-foreground"><strong>Not Legal or Tax Advice:</strong></p>
@@ -387,9 +387,9 @@ const TermsOfUse = () => {
                     For questions about these Terms of Use or to request a Business Associate Agreement, contact us:
                   </p>
                   <div className="space-y-2 text-foreground">
-                    <p><strong>Email:</strong> <a href="mailto:legal@the-connections.com" className="text-primary hover:underline">info@the-connections.com</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:legal@The Connections.com" className="text-primary hover:underline">info@The Connections.com</a></p>
                     <p><strong>Phone:</strong> <a href="tel:+917887898196" className="text-primary hover:underline">+91 788-789-8196</a></p>
-                    <p><strong>Address:</strong> Legal Department, The-Connections, Pune, India</p>
+                    <p><strong>Address:</strong> Legal Department, The Connections, Pune, India</p>
                   </div>
                 </div>
 

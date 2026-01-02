@@ -40,7 +40,7 @@ const GastroenterologyBilling = () => (
         "name": "Gastroenterology Billing Services",
         "description": "Expert gastroenterology billing services in the USA, best GI billing in New York, GI billing and coding companies.",
         "areaServed": ["USA", "NY"],
-        "provider": { "@type": "Organization", "name": "The-Connections" }
+        "provider": { "@type": "Organization", "name": "The Connections" }
       })}</script>
     </Helmet>
     <div className="min-h-screen flex flex-col">

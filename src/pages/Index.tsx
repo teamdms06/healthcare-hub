@@ -107,7 +107,7 @@ const Index = () => {
       <section id="why-choose-us" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Why Choose The-Connections?</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Why Choose The Connections?</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               We deliver exceptional value through our proven expertise and commitment to excellence
             </p>

@@ -30,7 +30,7 @@ const DermatologyBilling = () => (
         "name": "Dermatology Billing Services",
         "description": "Expert dermatology billing specialist in the USA, best dermatology billing specialist, dermatology medical billing in New York, and payment solutions.",
         "areaServed": ["USA", "NY"],
-        "provider": { "@type": "Organization", "name": "The-Connections" }
+        "provider": { "@type": "Organization", "name": "The Connections" }
       })}</script>
     </Helmet>
     <div className="min-h-screen flex flex-col">

@@ -116,7 +116,7 @@ const Navbar = () => {
             <Link to="/" className="flex items-center">
               <img
                 src={logo}
-                alt="The-Connections - Quality & Value Delivered, Together"
+                alt="The Connections - Quality & Value Delivered, Together"
                 className="h-14 w-auto object-contain"
               />
             </Link>

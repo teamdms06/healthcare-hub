@@ -24,6 +24,9 @@ import omnichannelSlide1 from "@/assets/omnichannel-slide-1.jpg";
 import omnichannelSlide2 from "@/assets/omnichannel-slide-2.jpg";
 import omnichannelSlide3 from "@/assets/omnichannel-slide-3.jpg";
 import heroImage from "@/assets/heroes/what-we-do-hero.jpg";
+import acquisitionServiceImg from "@/assets/menu/acquisition-service.jpg";
+import satisfactionSurveyImg from "@/assets/menu/satisfaction-survey.jpg";
+import vipManagementImg from "@/assets/menu/vip-management.jpg";
 
 const WhatWeDo = () => {
   const services = [
@@ -160,7 +163,7 @@ const WhatWeDo = () => {
             <div className="order-2 md:order-1 group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i0.wp.com/the-connections.com/wp-content/uploads/2020/07/tm-post-three.jpg?w=847&ssl=1" 
+                  src="https://i0.wp.com/The Connections.com/wp-content/uploads/2020/07/tm-post-three.jpg?w=847&ssl=1" 
                   alt="Clinet Strategies and Consulting" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -217,7 +220,7 @@ const WhatWeDo = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i1.wp.com/the-connections.com/wp-content/uploads/2020/06/post-0083.jpg?w=847&ssl=1" 
+                  src="https://i1.wp.com/The Connections.com/wp-content/uploads/2020/06/post-0083.jpg?w=847&ssl=1" 
                   alt="Customer Care Services"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -329,7 +332,7 @@ const WhatWeDo = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i0.wp.com/the-connections.com/wp-content/uploads/2020/08/tm-blog02.jpg?w=847&ssl=1" 
+                  src="https://i0.wp.com/The Connections.com/wp-content/uploads/2020/08/tm-blog02.jpg?w=847&ssl=1" 
                   alt="Contact Centre Software"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -351,7 +354,7 @@ const WhatWeDo = () => {
             <div className="order-2 md:order-1 group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i1.wp.com/the-connections.com/wp-content/uploads/2020/06/tm-services-three.jpg?w=847&ssl=1" 
+                  src={acquisitionServiceImg}
                   alt="Customer Acquisition" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -408,7 +411,7 @@ const WhatWeDo = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i0.wp.com/the-connections.com/wp-content/uploads/2020/07/tm-post-one.jpg?w=847&ssl=1" 
+                  src="https://i0.wp.com/The Connections.com/wp-content/uploads/2020/07/tm-post-one.jpg?w=847&ssl=1" 
                   alt="Sales Leakage Prevention"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -430,7 +433,7 @@ const WhatWeDo = () => {
             <div className="order-2 md:order-1 group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i1.wp.com/the-connections.com/wp-content/uploads/2020/07/tm-servicesone.jpg?w=847&ssl=1" 
+                  src={satisfactionSurveyImg} 
                   alt="Satisfaction & Feedback Survey" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -481,7 +484,7 @@ const WhatWeDo = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i0.wp.com/the-connections.com/wp-content/uploads/2020/11/image1.png?w=847&ssl=1" 
+                  src="https://i0.wp.com/The Connections.com/wp-content/uploads/2020/11/image1.png?w=847&ssl=1" 
                   alt="AMC Management" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -503,7 +506,7 @@ const WhatWeDo = () => {
             <div className="order-2 md:order-1 group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i2.wp.com/the-connections.com/wp-content/uploads/2020/08/tm-blog01.jpg?w=847&ssl=1" 
+                  src={vipManagementImg} 
                   alt="Key or VIP Account Management" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -554,7 +557,7 @@ const WhatWeDo = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i2.wp.com/the-connections.com/wp-content/uploads/2020/11/image2-1.png?w=847&ssl=1" 
+                  src="https://i2.wp.com/The Connections.com/wp-content/uploads/2020/11/image2-1.png?w=847&ssl=1" 
                   alt="Invoices Management"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -576,7 +579,7 @@ const WhatWeDo = () => {
             <div className="order-2 md:order-1 group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i1.wp.com/the-connections.com/wp-content/uploads/2020/06/tm-blogdetail-two.jpg?w=847&ssl=1" 
+                  src="https://i1.wp.com/The Connections.com/wp-content/uploads/2020/06/tm-blogdetail-two.jpg?w=847&ssl=1" 
                   alt="Market Survey & Analysis" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -627,7 +630,7 @@ const WhatWeDo = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i1.wp.com/the-connections.com/wp-content/uploads/2020/06/tm-services-four.jpg?w=847&ssl=1" 
+                  src="https://i1.wp.com/The Connections.com/wp-content/uploads/2020/06/tm-services-four.jpg?w=847&ssl=1" 
                   alt="Back Office Support" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -649,7 +652,7 @@ const WhatWeDo = () => {
             <div className="order-2 md:order-1 group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i2.wp.com/the-connections.com/wp-content/uploads/2020/11/image3.png?w=847&ssl=1" 
+                  src="https://i2.wp.com/The Connections.com/wp-content/uploads/2020/11/image3.png?w=847&ssl=1" 
                   alt="Client Database Analytics" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -700,7 +703,7 @@ const WhatWeDo = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-2xl shadow-[var(--shadow-lg)] transition-all duration-500 hover:shadow-[var(--shadow-accent)]">
                 <img 
-                  src="https://i1.wp.com/the-connections.com/wp-content/uploads/2020/11/image4.png?w=847&ssl=1" 
+                  src="https://i1.wp.com/The Connections.com/wp-content/uploads/2020/11/image4.png?w=847&ssl=1" 
                   alt="Client for Startups" 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />

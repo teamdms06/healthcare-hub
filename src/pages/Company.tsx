@@ -32,7 +32,7 @@ const Company = () => {
   ];
 
   const milestones = [
-    { year: "2011", event: "The-Connections founded in Pune" },
+    { year: "2011", event: "The Connections founded in Pune" },
     { year: "2012", event: "Expanded operations to Bangalore" },
     { year: "2015", event: "Achieved HIPAA compliance certification" },
     { year: "2018", event: "Crossed 500+ satisfied clients milestone" },
@@ -67,7 +67,7 @@ const Company = () => {
       {/* Hero Section */}
       {/* <section className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">About The-Connections</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">About The Connections</h1>
           <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90"> */}
       <section className="relative py-20 overflow-hidden">
         {/* Background Image */}
@@ -79,7 +79,7 @@ const Company = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
         
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">About The-Connections</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">About The Connections</h1>
           <p className="text-xl max-w-3xl mx-auto text-white/90 drop-shadow-md">          
             Quality & Value Delivered, Together - Your trusted partner in healthcare excellence since 2011
           </p>
@@ -93,7 +93,7 @@ const Company = () => {
             <h2 className="text-4xl font-bold text-primary mb-8 text-center">Our Story</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="text-lg leading-relaxed mb-6">
-                Founded in 2008, The-Connections emerged from a simple yet powerful vision: to transform healthcare 
+                Founded in 2008, The Connections emerged from a simple yet powerful vision: to transform healthcare 
                 operations through exceptional BPO services. What started as a small team in Pune has grown into a 
                 leading healthcare service provider with operations spanning across India's top IT hubs.
               </p>

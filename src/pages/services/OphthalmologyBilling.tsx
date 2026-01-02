@@ -34,7 +34,7 @@ const OphthalmologyBilling = () => (
         "name": "Ophthalmology Billing Services",
         "description": "Expert ophthalmology billing services in New York, USA, Texas, Pennsylvania, California, and Florida.",
         "areaServed": ["NY", "USA", "TX", "PA", "CA", "FL"],
-        "provider": { "@type": "Organization", "name": "The-Connections" }
+        "provider": { "@type": "Organization", "name": "The Connections" }
       })}</script>
     </Helmet>
     <div className="min-h-screen flex flex-col">

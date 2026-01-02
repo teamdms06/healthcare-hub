@@ -140,8 +140,8 @@ const Contact = () => {
                     <Mail className="h-10 w-10 text-accent flex-shrink-0 mt-1" />
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-primary mb-2">Email</h3>
-                      <a href="mailto:info@the-connections.com" className="text-base font-semibold text-accent hover:underline">
-                        info@the-connections.com
+                      <a href="mailto:info@The Connections.com" className="text-base font-semibold text-accent hover:underline">
+                        info@The Connections.com
                       </a>
                       <p className="text-xs text-muted-foreground mt-2">
                         You're our top priority expect to hear from us soon.

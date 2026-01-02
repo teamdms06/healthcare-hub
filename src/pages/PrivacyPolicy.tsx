@@ -7,8 +7,8 @@ const PrivacyPolicy = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy | The-Connections - HIPAA Compliant Healthcare Service</title>
-        <meta name="description" content="The-Connections Privacy Policy. Learn how we protect your personal information and maintain HIPAA compliance in all our healthcare services." />
+        <title>Privacy Policy | The Connections - HIPAA Compliant Healthcare Service</title>
+        <meta name="description" content="The Connections Privacy Policy. Learn how we protect your personal information and maintain HIPAA compliance in all our healthcare services." />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">
@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
                 {/* Introduction */}
                 <div className="mb-12">
                   <p className="text-lg text-muted-foreground mb-4">
-                    At The-Connections, we are committed to protecting your privacy and maintaining the confidentiality of your personal and health information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information in compliance with HIPAA (Health Insurance Portability and Accountability Act) and other applicable privacy regulations.
+                    At The Connections, we are committed to protecting your privacy and maintaining the confidentiality of your personal and health information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information in compliance with HIPAA (Health Insurance Portability and Accountability Act) and other applicable privacy regulations.
                   </p>
                 </div>
 
@@ -217,9 +217,9 @@ const PrivacyPolicy = () => {
                     For privacy inquiries, data access requests, or HIPAA concerns, contact our Privacy Officer:
                   </p>
                   <div className="space-y-2 text-foreground">
-                    <p><strong>Email:</strong> <a href="mailto:privacy@the-connections.com" className="text-primary hover:underline">info@the-connections.com</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:privacy@The Connections.com" className="text-primary hover:underline">info@The Connections.com</a></p>
                     <p><strong>Phone:</strong> <a href="tel:+917887898196" className="text-primary hover:underline">+91 788-789-8196</a></p>
-                    <p><strong>Address:</strong> Privacy Officer, The-Connections, Pune, India</p>
+                    <p><strong>Address:</strong> Privacy Officer, The Connections, Pune, India</p>
                   </div>
                 </div>
 

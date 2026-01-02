@@ -153,7 +153,7 @@ const MentalHealthBilling = () => {
     areaServed: ["US", "New York", "Florida", "Texas", "California"],
     provider: {
       "@type": "Organization",
-      name: "The-Connections",
+      name: "The Connections",
       url: "https://your-domain.com"
     }
   };

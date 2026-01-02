@@ -12,7 +12,7 @@ const Footer = () => {
               {/* <div className="bg-accent text-accent-foreground p-2 rounded-lg font-bold text-xl">
                 TC
               </div> */}
-              <span className="font-bold text-lg">The-Connections</span>
+              <span className="font-bold text-lg">The Connections</span>
             </div>
             <p className="text-primary-foreground/80 mb-4">
               Quality & Value Delivered, Together. Your trusted partner for healthcare service, BPO service and customer experience solutions.
@@ -139,8 +139,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 flex-shrink-0 text-accent" />
-                <a href="mailto:info@the-connections.com" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  info@the-connections.com
+                <a href="mailto:info@The Connections.com" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  info@The Connections.com
                 </a>
               </li>
             </ul>
@@ -149,7 +149,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-primary-foreground/60">
-            <p>&copy; {new Date().getFullYear()} The-Connections. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} The Connections. All rights reserved.</p>
             <div className="flex gap-6 text-sm">
               <Link to="/privacy-policy" className="hover:text-accent transition-colors">
                 Privacy Policy

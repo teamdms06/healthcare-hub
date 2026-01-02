@@ -1,4 +1,4 @@
-// Chatbot script for The-Connections
+// Chatbot script for The Connections
 // Place this file in /public/chatbot.js and reference it from index.html
 
 window.onload = function () {
