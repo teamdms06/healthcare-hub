@@ -19,7 +19,7 @@ const bpoServices = [
     title: "Customer Support Services",
     description: "24/7 multi-channel customer support with expert agents and advanced CRM integration for superior customer experience.",
     link: "/services/patient-support",
-    color: "text-red-600"
+    color: "text-blue-600"
   },
   {
     icon: Calculator,
@@ -47,7 +47,7 @@ const bpoServices = [
     title: "Back Office Operations",
     description: "Efficient administrative support, document management, and business process automation solutions.",
     link: "/services/business-analysis",
-    color: "text-red-600"
+    color: "text-blue-600"
   },
   {
     icon: BarChart3,

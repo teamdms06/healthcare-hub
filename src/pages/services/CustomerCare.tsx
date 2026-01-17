@@ -143,7 +143,7 @@ const CustomerCare = () => {
                         "Protect revenue and improve conversion rates every month."
                       ].map((item, idx) => (
                         <li key={idx} className="flex items-start gap-3">
-                          <span className="mt-2 h-2.5 w-2.5 rounded-full bg-red-500 flex-shrink-0" />
+                          <span className="mt-2 h-2.5 w-2.5 rounded-full bg-blue-500 flex-shrink-0" />
                           <span className="text-sm text-slate-600">{item}</span>
                         </li>
                       ))}

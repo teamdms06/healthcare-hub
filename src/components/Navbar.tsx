@@ -11,7 +11,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/TC-Logo.png";
 import medicalCodingImg from "@/assets/menu/medical-coding.jpg";
 import credentialingImg from "@/assets/menu/credentialing.jpg";
 import medicalBillingImg from "@/assets/menu/medical-billing.jpg";

@@ -189,7 +189,7 @@ function initChatbot() {
     right: "20px",
     width: "60px",
     height: "60px",
-    background: "#00a651",
+    background: "#6EADE9",
     color: "#fff",
     borderRadius: "50%",
     display: "flex",
@@ -228,7 +228,7 @@ function initChatbot() {
   /* Header */
   const header = document.createElement("div");
   header.innerHTML = `
-      <div style="display:flex;align-items:center;padding:14px;background:#00a651;color:white;">
+      <div style="display:flex;align-items:center;padding:14px;background:#6EADE9;color:white;">
         <div style="font-size:18px;font-weight:bold;">The Connections Chatbot</div>
         <span id="closeChat" style="cursor:pointer;font-size:20px;margin-left:8rem;margin-top:-5px">x</span>
       </div>
@@ -252,7 +252,7 @@ function initChatbot() {
     Object.assign(div.style, {
       marginBottom: "8px",
       alignSelf: from === "user" ? "flex-end" : "flex-start",
-      background: from === "user" ? "#00a651" : "#e4e6eb",
+      background: from === "user" ? "#6EADE9" : "#e4e6eb",
       color: from === "user" ? "white" : "black",
       padding: "10px 14px",
       borderRadius: "18px",
