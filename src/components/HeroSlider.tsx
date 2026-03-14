@@ -91,7 +91,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/charge-capturing",
-    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: eligibility,
@@ -105,7 +105,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/eligibility-verification",
-    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: optometry,
@@ -119,7 +119,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/optometry-billing",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: mental,
@@ -133,7 +133,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/mental-health-billing",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: dental,
@@ -147,7 +147,7 @@ const slides = [
     ],
     cta: "Learn More",
     link: "/services/specialty-billing#dental",
-    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)  
+    show: false, // ✅ visible  || ❌ hidden (still in array but not shown)  
   },
   {
     image: patient,
