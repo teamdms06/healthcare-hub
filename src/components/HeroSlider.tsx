@@ -215,7 +215,22 @@ const slides = [
     link: "/services/hcc-coding",
     show: false, // ✅ visible  || ❌ hidden (still in array but not shown)      
   },
+
   /// BPO Slides Below ///
+  {
+    image: contact,
+    title: "Automotive Services",
+    subtitle: "ENHANCING AUTOMOTIVE OPERATIONS WITH FAST, RELIABLE CUSTOMER SUPPORT.",
+    points: [
+      "Customer Support & Assistance",
+      "Roadside Assistance Coordination",
+      "Parts & Inventory Support",
+      "Service Appointment Scheduling"
+    ],
+    cta: "Learn More",
+    link: "/services/contact-centre",
+    show: true, // ✅ visible  || ❌ hidden (still in array but not shown)      
+  },
   {
     image: contact,
     title: "Customer Care That Never Stops",
