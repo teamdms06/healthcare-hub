@@ -9,50 +9,50 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 220 15% 20%;
+    --foreground: 225 25% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 15% 20%;
+    --card-foreground: 225 25% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 20%;
+    --popover-foreground: 225 25% 18%;
 
-    --primary: 220 25% 15%;
+    --primary: 225 55% 36%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 15% 94%;
-    --secondary-foreground: 220 25% 15%;
+    --secondary: 195 35% 94%;
+    --secondary-foreground: 225 55% 36%;
 
-    --muted: 210 15% 96%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 195 28% 96%;
+    --muted-foreground: 225 14% 42%;
 
-    --accent: 211 76% 67%;
+    --accent: 196 53% 43%;
     --accent-foreground: 0 0% 98%;
 
-    --destructive: 211 76% 67%;
+    --destructive: 196 53% 43%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 90%;
-    --input: 220 15% 90%;
-    --ring: 211 76% 67%;
+    --border: 196 20% 88%;
+    --input: 196 20% 88%;
+    --ring: 180 54% 44%;
 
     --radius: 0.75rem;
     
     /* Healthcare Brand Colors */
-    --healthcare-primary: 211 76% 67%;
-    --healthcare-dark: 220 25% 15%;
-    --healthcare-light: 211 100% 92%;
+    --healthcare-primary: 180 54% 44%;
+    --healthcare-dark: 225 55% 36%;
+    --healthcare-light: 191 60% 91%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(220 25% 15%) 0%, hsl(220 30% 25%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(211 76% 67%) 0%, hsl(211 76% 57%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(210 15% 98%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(225 55% 36%) 0%, hsl(196 53% 43%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(180 54% 44%) 0%, hsl(225 55% 36%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(195 28% 98%) 100%);
     
     /* Shadows */
-    --shadow-sm: 0 2px 8px hsl(220 25% 15% / 0.08);
-    --shadow-md: 0 8px 24px hsl(220 25% 15% / 0.12);
-    --shadow-lg: 0 16px 48px hsl(220 25% 15% / 0.15);
-    --shadow-accent: 0 8px 24px hsl(211 76% 67% / 0.25);
+    --shadow-sm: 0 2px 8px hsl(225 55% 36% / 0.08);
+    --shadow-md: 0 8px 24px hsl(225 55% 36% / 0.12);
+    --shadow-lg: 0 16px 48px hsl(225 55% 36% / 0.15);
+    --shadow-accent: 0 8px 24px hsl(180 54% 44% / 0.25);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -77,35 +77,35 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 220 25% 10%;
+    --background: 225 36% 10%;
     --foreground: 0 0% 98%;
 
-    --card: 220 25% 12%;
+    --card: 225 32% 12%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 220 25% 12%;
+    --popover: 225 32% 12%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 211 76% 67%;
+    --primary: 180 54% 44%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 220 20% 18%;
+    --secondary: 225 26% 18%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 220 20% 18%;
-    --muted-foreground: 220 10% 60%;
+    --muted: 225 26% 18%;
+    --muted-foreground: 195 16% 64%;
 
-    --accent: 211 76% 67%;
+    --accent: 196 53% 43%;
     --accent-foreground: 0 0% 98%;
 
-    --destructive: 211 76% 67%;
+    --destructive: 196 53% 43%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 20% 20%;
-    --input: 220 20% 20%;
-    --ring: 211 76% 67%;
+    --border: 225 24% 22%;
+    --input: 225 24% 22%;
+    --ring: 180 54% 44%;
     
-    --gradient-hero: linear-gradient(135deg, hsl(220 25% 8%) 0%, hsl(220 30% 15%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(225 40% 9%) 0%, hsl(225 48% 22%) 100%);
     --shadow-sm: 0 2px 8px hsl(0 0% 0% / 0.3);
     --shadow-md: 0 8px 24px hsl(0 0% 0% / 0.4);
     --shadow-lg: 0 16px 48px hsl(0 0% 0% / 0.5);
@@ -136,7 +136,7 @@ All colors MUST be HSL.
 
 /* Page-scoped overrides */
 .contact-page {
-  background-color: hsl(0 0% 56.1%) !important;
+  background-color: hsl(var(--primary)) !important;
 }
 
 /* Ensure Tawk.to chatbot widget is visible */
@@ -164,11 +164,11 @@ All colors MUST be HSL.
 
 .tilt-3d-card:hover {
   box-shadow: 
-    0 25px 50px -12px hsl(220 25% 15% / 0.25),
-    0 0 30px hsl(211 76% 67% / 0.15);
+    0 25px 50px -12px hsl(225 55% 36% / 0.25),
+    0 0 30px hsl(180 54% 44% / 0.15);
 }
 
 .light-pink {
-  background-color: #e3f5ff;
-  border-color: #6EADE9
+  background-color: hsl(191 60% 94%);
+  border-color: hsl(180 54% 44%);
 }

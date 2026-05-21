@@ -28,7 +28,7 @@ const Industries = () => {
       description: "Specialized support for pharmaceutical companies including regulatory compliance and customer service.",
       services: ["Compliance Management", "Sales Support", "Customer Service", "Data Analytics"],
       image: pharmaceuticalsImg
-    },
+    }, 
     {
       icon: Building2,
       title: "Financial Services",
