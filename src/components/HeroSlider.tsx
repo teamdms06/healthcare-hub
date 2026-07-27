@@ -305,8 +305,11 @@ const slides = [
 ];
 
 const HeroSlider = () => {
-
-  const visibleSlides = slides.filter((slide) => slide.show);
+  // Lead with BPO stories while retaining healthcare as a specialist capability.
+  // The visible mix is currently four BPO slides and two healthcare slides.
+  const healthcareSlides = slides.slice(0, 14);
+  const bpoSlides = slides.slice(14);
+  const visibleSlides = [...bpoSlides, ...healthcareSlides].filter((slide) => slide.show);
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {

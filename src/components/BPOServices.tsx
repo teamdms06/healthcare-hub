@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { FileText, Headphones, Calculator, Users, Settings, Building2, ArrowRight } from "lucide-react";
+import { FileText, Headphones, Calculator, Users, Settings, Building2 } from "lucide-react";
 
 import acquisitionImg from "@/assets/menu/acquisition.jpg";
 import analyticsImg from "@/assets/menu/analytics.jpg";
@@ -22,35 +22,35 @@ const services = [
     icon: Headphones,
     title: "Customer Support Services",
     description: "24/7 multi-channel customer support with expert agents and advanced CRM integration.",
-    link: "/services/patient-support",
+    link: "/services/customer-care",
     image: omnichannelImg
   },
   {
     icon: Calculator,
     title: "Finance & Accounting",
     description: "Bookkeeping, accounts payable/receivable, payroll processing, and financial reporting.",
-    link: "/services/account-receivable",
+    link: "/services/invoice-management",
     image: analyticsImg
   },
   {
     icon: Users,
     title: "HR & Recruitment",
     description: "Talent acquisition, onboarding, payroll management, and employee support services.",
-    link: "/services/group-credentialing",
+    link: "/services/customer-acquisition",
     image: acquisitionImg
   },
   {
     icon: Settings,
     title: "Technical Support",
     description: "IT helpdesk, software support, and technical troubleshooting for global businesses.",
-    link: "/services/telehealth",
+    link: "/services/contact-centre",
     image: technicalSupportImg
   },
   {
     icon: Building2,
     title: "Back Office Operations",
     description: "Administrative support, document management, and business process automation.",
-    link: "/services/business-analysis",
+    link: "/services/back-office-support",
     image: consultingImg
   }
 ];
@@ -100,6 +100,9 @@ const BPOServices = () => {
                   <p className="text-white/80 leading-relaxed text-sm">
                     {service.description}
                   </p>
+                  <Button variant="link" className="p-0 mt-4 h-auto justify-start font-semibold text-white hover:text-accent" asChild>
+                    <Link to={service.link}>Learn More</Link>
+                  </Button>
                 </CardContent>
               </Card>
             );
@@ -108,7 +111,7 @@ const BPOServices = () => {
 
         <div className="text-center mt-12">
           <Button variant="hero" size="lg" asChild>
-            <Link to="/industries">View All BPO Services</Link>
+            <Link to="/bpo-services">Explore All BPO Services</Link>
           </Button>
         </div>
       </div>

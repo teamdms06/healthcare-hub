@@ -8,10 +8,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, TrendingUp, Shield, Clock } from "lucide-react";
 import puneCityscape from "@/assets/pune-cityscape.jpg";
-import medicalBillingImg from "@/assets/healthcare/medical-billing.jpg";
 import analyticsImg from "@/assets/bpo/analytics.jpg";
-import medicalCodingImg from "@/assets/healthcare/medical-coding.jpg";
-import patientSupportImg from "@/assets/healthcare/patient-support.jpg";
+import contactCenterImg from "@/assets/contact-center.jpg";
+import backOfficeImg from "@/assets/menu/back-office.jpg";
+import customerCareImg from "@/assets/menu/customer-care.jpg";
 
 const Index = () => {
   return (
@@ -30,10 +30,10 @@ const Index = () => {
               // { icon: TrendingUp, label: "Revenue Improvement", value: "70%" },
               // { icon: Shield, label: "Coding Accuracy", value: "99.8%" },
               // { icon: Clock, label: "Support Available", value: "24/7" },
-              { icon: Award, label: "Industry Experience", value: "13+ Years", bgImage: medicalBillingImg },
+              { icon: Award, label: "Industry Experience", value: "13+ Years", bgImage: contactCenterImg },
               { icon: TrendingUp, label: "Revenue Improvement", value: "70%", bgImage: analyticsImg },
-              { icon: Shield, label: "Coding Accuracy", value: "99.8%", bgImage: medicalCodingImg },
-              { icon: Clock, label: "Support Available", value: "24/7", bgImage: patientSupportImg },              
+              { icon: Shield, label: "Quality-Led Operations", value: "99.8%", bgImage: backOfficeImg },
+              { icon: Clock, label: "Support Available", value: "24/7", bgImage: customerCareImg },
             ].map((stat, index) => {
               const Icon = stat.icon;
               return (
@@ -62,11 +62,11 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Healthcare Services Section */}
-      <HealthcareServices />
-
       {/* BPO Services Section */}
       <BPOServices />
+
+      {/* Healthcare remains a core specialist vertical */}
+      <HealthcareServices />
 
       {/* About Section */}
       {/* <section id="about" className="py-20 bg-gradient-to-br from-primary to-primary/90 text-primary-foreground">
@@ -88,8 +88,8 @@ const Index = () => {
             <p className="text-xl mb-8 text-primary-foreground/90"> */}
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg">WE ARE BASED IN PUNE, BANGALORE & AHMEDABAD</h2>
             <p className="text-xl mb-8 text-white/90">            
-              With a strong presence in India's leading IT hubs, we deliver world-class healthcare services that combine
-              technology, expertise, and dedication to excellence.
+              From India's leading technology hubs, we deliver scalable customer experience, back-office, analytics,
+              and industry-specialist operations for growing businesses worldwide.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button variant="hero" size="lg" asChild>
@@ -117,15 +117,15 @@ const Index = () => {
             {[
               {
                 title: "Proven Track Record",
-                description: "13+ years of experience serving healthcare providers with exceptional results",
+                description: "13+ years of experience delivering dependable outsourced operations across industries",
               },
               {
                 title: "Advanced Technology",
-                description: "Cutting-edge tools and platforms for seamless healthcare operations",
+                description: "Modern tools, analytics, and workflows that make every outsourced process measurable",
               },
               {
                 title: "Expert Team",
-                description: "Highly trained professionals with deep healthcare industry knowledge",
+                description: "Highly trained teams combining broad BPO capability with specialist healthcare knowledge",
               },
             ].map((reason, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow">

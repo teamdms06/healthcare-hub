@@ -37,14 +37,14 @@ const Company = () => {
     { year: "2015", event: "Achieved HIPAA compliance certification" },
     { year: "2018", event: "Crossed 500+ satisfied clients milestone" },
     { year: "2020", event: "Launched advanced AI-powered solutions" },
-    { year: "2023", event: "Recognized as Top Healthcare Service Provider" },
-    { year: "2025", event: "Serving 1000+ healthcare providers globally" }
+    { year: "2023", event: "Expanded cross-industry BPO and customer experience capabilities" },
+    { year: "2025", event: "Scaling quality-led operations for clients across industries" }
   ];
 
   const team = [
     {
       name: "Leadership Team",
-      description: "Experienced executives with decades of combined expertise in healthcare and BPO industries"
+      description: "Experienced executives with decades of combined expertise in BPO, customer experience, and healthcare operations"
     },
     {
       name: "Medical Coding Experts",
@@ -52,7 +52,7 @@ const Company = () => {
     },
     {
       name: "Technology Specialists",
-      description: "Skilled engineers developing innovative solutions for healthcare operations"
+      description: "Skilled engineers developing measurable, scalable solutions for outsourced operations"
     },
     {
       name: "Customer Support Team",
@@ -81,7 +81,7 @@ const Company = () => {
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">About The Connections</h1>
           <p className="text-xl max-w-3xl mx-auto text-white/90 drop-shadow-md">          
-            Quality & Value Delivered, Together - Your trusted partner in healthcare excellence since 2011
+            Quality & Value Delivered, Together — your partner for scalable BPO and specialist healthcare operations
           </p>
         </div>
       </section>
@@ -93,9 +93,9 @@ const Company = () => {
             <h2 className="text-4xl font-bold text-primary mb-8 text-center">Our Story</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="text-lg leading-relaxed mb-6">
-                Founded in 2008, The Connections emerged from a simple yet powerful vision: to transform healthcare 
-                operations through exceptional BPO services. What started as a small team in Pune has grown into a 
-                leading healthcare service provider with operations spanning across India's top IT hubs.
+                Founded in 2008, The Connections emerged with a clear vision: help organizations run better through
+                exceptional outsourced operations. What started as a small team in Pune has grown into a cross-industry
+                BPO partner with delivery operations spanning India's top technology hubs.
               </p>
               <p className="text-lg leading-relaxed mb-6">
                 Over the years, we've built our reputation on unwavering commitment to quality, innovation, and 
@@ -103,8 +103,8 @@ const Company = () => {
                 staying ahead of industry trends and technological advancements.
               </p>
               <p className="text-lg leading-relaxed">
-                Today, we proudly serve over 1000 healthcare providers globally, delivering comprehensive solutions 
-                that drive efficiency, reduce costs, and improve patient outcomes. Our success is measured by the 
+                Today, we deliver customer experience, back-office, analytics, and specialist healthcare solutions
+                that drive efficiency, reduce costs, and improve business outcomes. Our success is measured by the
                 success of our clients, and we remain dedicated to being their trusted partner in excellence.
               </p>
             </div>
@@ -123,8 +123,8 @@ const Company = () => {
                   <Target className="h-16 w-16 text-accent mb-6" />
                   <h3 className="text-3xl font-bold text-primary mb-4">Our Mission</h3>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    To empower healthcare providers with world-class BPO services that optimize operations, 
-                    reduce costs, and enhance patient care. We are committed to delivering excellence through 
+                    To empower organizations with world-class BPO services that optimize operations, strengthen customer
+                    experience, and accelerate growth. We are committed to delivering excellence through
                     innovation, expertise, and unwavering dedication to our clients' success.
                   </p>
                 </CardContent>
@@ -137,9 +137,8 @@ const Company = () => {
                   <Eye className="h-16 w-16 text-accent mb-6" />
                   <h3 className="text-3xl font-bold text-primary mb-4">Our Vision</h3>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    To be the global leader in healthcare services, recognized for our exceptional quality, 
-                    innovative solutions, and transformative impact on healthcare operations worldwide. We envision 
-                    a future where every healthcare provider has access to best-in-class support services.
+                    To be a trusted global BPO partner, recognized for exceptional quality, innovative solutions,
+                    and measurable impact across customer experience and business operations worldwide.
                   </p>
                 </CardContent>
               </Card>

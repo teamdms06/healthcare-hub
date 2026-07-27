@@ -18,42 +18,42 @@ const bpoServices = [
     icon: Headphones,
     title: "Customer Support Services",
     description: "24/7 multi-channel customer support with expert agents and advanced CRM integration for superior customer experience.",
-    link: "/services/patient-support",
+    link: "/services/customer-care",
     color: "text-blue-600"
   },
   {
     icon: Calculator,
     title: "Finance & Accounting",
     description: "Comprehensive bookkeeping, accounts payable/receivable, payroll processing, and detailed financial reporting.",
-    link: "/services/account-receivable",
+    link: "/services/invoice-management",
     color: "text-purple-600"
   },
   {
     icon: Users,
     title: "HR & Recruitment",
     description: "End-to-end talent acquisition, onboarding processes, payroll management, and dedicated employee support services.",
-    link: "/services/group-credentialing",
+    link: "/services/customer-acquisition",
     color: "text-orange-600"
   },
   {
     icon: Settings,
     title: "Technical Support",
     description: "Professional IT helpdesk, software support, and technical troubleshooting services for global businesses.",
-    link: "/services/telehealth",
+    link: "/services/contact-centre",
     color: "text-teal-600"
   },
   {
     icon: Building2,
     title: "Back Office Operations",
     description: "Efficient administrative support, document management, and business process automation solutions.",
-    link: "/services/business-analysis",
+    link: "/services/back-office-support",
     color: "text-blue-600"
   },
   {
     icon: BarChart3,
     title: "Business Analytics",
     description: "Data-driven insights, performance metrics, and strategic business intelligence to drive growth.",
-    link: "/services/analytics",
+    link: "/services/database-analytics",
     color: "text-indigo-600"
   },
   {
@@ -67,28 +67,28 @@ const bpoServices = [
     icon: TrendingUp,
     title: "Quality Assurance",
     description: "Comprehensive quality reviews and process optimization to ensure excellence in service delivery.",
-    link: "/services/quality-reviews",
+    link: "/services/satisfaction-survey",
     color: "text-pink-600"
   },
   {
     icon: ShieldCheck,
     title: "Compliance & Audits",
     description: "Regulatory compliance monitoring, audit support, and risk management services.",
-    link: "/services/claim-audits",
+    link: "/services/client-strategies",
     color: "text-amber-600"
   },
   {
     icon: Clock,
     title: "Appointment Management",
     description: "Professional scheduling, calendar management, and appointment coordination services.",
-    link: "/services/appointment-scheduling",
+    link: "/services/amc-management",
     color: "text-lime-600"
   },
   {
     icon: Headset,
     title: "Virtual Assistant Services",
     description: "Dedicated virtual assistants for administrative tasks, email management, and daily operations.",
-    link: "/services/patient-support",
+    link: "/services/client-startups",
     color: "text-rose-600"
   }
 ];

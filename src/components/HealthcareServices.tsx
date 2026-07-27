@@ -1,14 +1,11 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { FileText, DollarSign, Users, Database, Video, BarChart, ArrowRight } from "lucide-react";
+import { FileText, DollarSign, Users, ArrowRight } from "lucide-react";
 
 import medicalCodingImg from "@/assets/menu/medical-coding.jpg";
 import medicalBillingImg from "@/assets/menu/medical-billing.jpg";
 import consultingImg from "@/assets/menu/consulting.jpg";
-import managementImg from "@/assets/menu/management.jpg";
-import analyticsImg from "@/assets/menu/analytics.jpg";
-import heroHealthcare from "@/assets/hero-healthcare-2.jpg";
 
 const services = [
    {
@@ -31,27 +28,6 @@ const services = [
     description: "24/7 multi-channel support, appointment scheduling, and insurance verification assistance.",
     link: "/services/patient-support",
     image: consultingImg
-  },
-  {
-    icon: Database,
-    title: "Healthcare Data Management",
-    description: "Secure EHR/EMR data entry, clinical abstraction, and HIPAA-compliant data handling.",
-    link: "/services/data-management",
-    image: managementImg
-  },
-  {
-    icon: Video,
-    title: "Telehealth & Virtual Assistance",
-    description: "Remote patient engagement, virtual front-desk, and real-time telemedicine support.",
-    link: "/services/telehealth",
-    image: heroHealthcare
-  },
-  {
-    icon: BarChart,
-    title: "Healthcare Analytics",
-    description: "Claims analytics, patient satisfaction reporting, and predictive operational insights.",
-    link: "/services/analytics",
-    image: analyticsImg
   }
 ];
 
@@ -60,12 +36,12 @@ const HealthcareServices = () => {
     <section className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <p className="text-accent font-semibold mb-2 uppercase tracking-wider">Our Expertise</p>
+          <p className="text-accent font-semibold mb-2 uppercase tracking-wider">Specialist Industry Expertise</p>
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Comprehensive Healthcare Services
+            Healthcare Operations
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            Optimize your healthcare operations with our specialized services designed to improve efficiency, reduce costs, and enhance patient care.
+            Proven healthcare revenue-cycle and patient-support expertise, delivered with the same quality-led BPO operating model.
           </p>
         </div>
 

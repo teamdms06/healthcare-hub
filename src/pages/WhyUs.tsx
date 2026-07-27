@@ -109,7 +109,7 @@ const WhyUs = () => {
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">Why Choose The Connections?</h1>
           <p className="text-xl max-w-3xl mx-auto text-white/90 drop-shadow-md">          
-            Partner with a trusted leader in healthcare services and experience the difference that expertise,
+            Partner with a trusted BPO team and experience the difference that expertise,
             technology, and dedication can make
           </p>
         </div>
@@ -121,7 +121,7 @@ const WhyUs = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-4">Our Competitive Advantages</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              What sets us apart in the healthcare industry
+              What sets our outsourced operations apart
             </p>
           </div>
 
@@ -252,7 +252,7 @@ const WhyUs = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Experience the Difference?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto text-primary-foreground/90">
-            Let's discuss how we can help transform your healthcare operations
+            Let's discuss how we can transform and scale your business operations
           </p>
           <Button variant="hero" size="lg" asChild>
             <Link to="/contact">Schedule a Consultation</Link>

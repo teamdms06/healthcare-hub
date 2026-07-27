@@ -28,7 +28,7 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "What We Do?", path: "/what-we-do" },
-    { name: "BPO Service", path: "/industries" },
+    { name: "BPO Services", path: "/industries" },
     { name: "Why The Connections", path: "/why-us" },
     { name: "About Us", path: "/company" },
   ];
@@ -135,17 +135,17 @@ const Navbar = () => {
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="bg-transparent hover:bg-accent/10 text-base font-medium">
+                    <NavigationMenuLink asChild>
                       <Link
                         to="/what-we-do"
-                        className={`text-base font-medium transition-colors hover:text-accent ${
+                        className={`block rounded-md px-4 py-2 text-base font-medium transition-colors hover:bg-accent/10 hover:text-accent ${
                           isActive("/what-we-do") ? "text-accent" : "text-foreground"
                         }`}
                       >
                         What We Do?
                       </Link>
-                    </NavigationMenuTrigger>
-                    <NavigationMenuContent className="left-0">
+                    </NavigationMenuLink>
+                    <NavigationMenuContent className="hidden">
                       <div className="flex w-[1375px] h-[380px]">
                         {/* Consulting & Support */}
                         <div className="flex-1 p-5 border-r border-border">
@@ -305,6 +305,19 @@ const Navbar = () => {
                   </NavigationMenuItem>
 
                   <NavigationMenuItem>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        to="/industries"
+                        className={`block rounded-md px-4 py-2 text-base font-medium transition-colors hover:bg-accent/10 hover:text-accent ${
+                          isActive("/industries") ? "text-accent" : "text-foreground"
+                        }`}
+                      >
+                        BPO Services
+                      </Link>
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
+
+                  <NavigationMenuItem>
                     <NavigationMenuTrigger className="bg-transparent hover:bg-accent/10 text-base font-medium">
                       Healthcare Services
                     </NavigationMenuTrigger>
@@ -420,14 +433,6 @@ const Navbar = () => {
               </NavigationMenu>
 
               <Link
-                to="/industries"
-                className={`text-base font-medium transition-colors hover:text-accent ${
-                  isActive("/industries") ? "text-accent" : "text-foreground"
-                }`}
-              >
-                BPO Service
-              </Link>
-              <Link
                 to="/why-us"
                 className={`text-base font-medium transition-colors hover:text-accent ${
                   isActive("/why-us") ? "text-accent" : "text-foreground"
@@ -470,9 +475,17 @@ const Navbar = () => {
                 Home
               </Link>
 
-              <div className="mb-4">
-                <p className="py-3 text-base font-medium text-foreground">What We Do?</p>
-                <div className="pl-4 space-y-3">
+              <div>
+                <Link
+                  to="/what-we-do"
+                  className={`block py-3 text-base font-medium transition-colors hover:text-accent ${
+                    isActive("/what-we-do") ? "text-accent" : "text-foreground"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  What We Do?
+                </Link>
+                <div className="hidden">
                   <div>
                     <p className="text-sm font-semibold text-primary mb-2">Consulting & Support</p>
                     {bpoServices.consulting.map((service) => (
@@ -527,6 +540,16 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
+
+              <Link
+                to="/industries"
+                className={`block py-3 text-base font-medium transition-colors hover:text-accent ${
+                  isActive("/industries") ? "text-accent" : "text-foreground"
+                }`}
+                onClick={() => setIsOpen(false)}
+              >
+                BPO Services
+              </Link>
 
               <div className="mb-4">
                 <button
@@ -592,15 +615,6 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <Link
-                to="/industries"
-                className={`block py-3 text-base font-medium transition-colors hover:text-accent ${
-                  isActive("/industries") ? "text-accent" : "text-foreground"
-                }`}
-                onClick={() => setIsOpen(false)}
-              >
-                BPO Service
-              </Link>
               <Link
                 to="/why-us"
                 className={`block py-3 text-base font-medium transition-colors hover:text-accent ${

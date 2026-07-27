@@ -143,21 +143,21 @@ const AllServices = () => {
           <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90"> */}
           <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">All Our Services</h1>
           <p className="text-xl max-w-3xl mx-auto text-white/90 drop-shadow-md">          
-            Comprehensive healthcare and BPO solutions designed to transform your operations and drive growth
+            BPO-led solutions for customer experience, operations, analytics, and specialist healthcare support
           </p>
         </div>
       </section>
 
-      {/* Healthcare Services */}
+      {/* Healthcare specialist services */}
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <p className="text-accent font-semibold mb-2 uppercase tracking-wider">Our Expertise</p>
+            <p className="text-accent font-semibold mb-2 uppercase tracking-wider">Specialist Expertise</p>
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
               Healthcare Services
             </h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-              Specialized healthcare BPO services to optimize operations and improve patient care
+              Focused healthcare operations expertise within our broader BPO portfolio
             </p>
           </div>
 

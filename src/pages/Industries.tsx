@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
-  Heart, Building2, ShoppingCart, GraduationCap, 
+  Headphones, Building2, ShoppingCart, GraduationCap,
   Plane, Home, Car, Smartphone, Pill, Stethoscope 
 } from "lucide-react";
 
@@ -113,21 +113,21 @@ const Industries = () => {
         </div>
       </section>
 
-      {/* Main Focus - Healthcare */}
+      {/* Main Focus - Cross-industry BPO */}
       <section className="py-20 bg-accent/10">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <Heart className="h-20 w-20 text-accent mx-auto mb-6" />
+              <Headphones className="h-20 w-20 text-accent mx-auto mb-6" />
               <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-                Our Primary Focus: Healthcare Services
+                BPO Built Around Your Industry
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                With deep expertise in healthcare BPO, we provide comprehensive services that optimize operations, 
-                reduce costs, and improve patient outcomes for healthcare providers across the globe.
+                Our customer experience, back-office, analytics, and growth teams adapt to your workflows, service levels,
+                and customers—while healthcare remains one of our deepest specialist domains.
               </p>
               <Button variant="hero" size="lg" asChild>
-                <Link to="/services/medical-coding">Explore Healthcare Services</Link>
+                <Link to="/bpo-services">Explore BPO Services</Link>
               </Button>
             </div>
           </div>

@@ -15,7 +15,7 @@ const Footer = () => {
               <span className="font-bold text-lg">The Connections</span>
             </div>
             <p className="text-accent-foreground/80 mb-4">
-              Quality & Value Delivered, Together. Your trusted partner for healthcare service, BPO service and customer experience solutions.
+              Quality & Value Delivered, Together. Your BPO partner for customer experience, back-office operations, analytics, and specialist healthcare support.
             </p>
             <div className="flex gap-4">
               <a href="https://www.facebook.com/theconnectionsbpo" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
@@ -34,6 +34,11 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
+              <li>
+                <Link to="/bpo-services" className="text-accent-foreground/80 hover:text-primary transition-colors">
+                  BPO Services
+                </Link>
+              </li>
               <li>
                 <Link to="/what-we-do" className="text-accent-foreground/80 hover:text-primary transition-colors">
                   What We Do
