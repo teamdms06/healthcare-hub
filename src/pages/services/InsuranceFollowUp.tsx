@@ -155,7 +155,7 @@ const InsuranceFollowUp = () => {
         <title>Insurance Follow-Up Services | Maximize Revenue Recovery | Expert AR Management</title>
         <meta name="description" content="Expert insurance follow-up services to maximize collections, reduce AR days, and recover revenue from unpaid and denied claims. Dedicated specialists for all payers." />
         <meta name="keywords" content="insurance follow-up, AR management, claims follow-up, denial management, revenue recovery, medical billing, accounts receivable" />
-        <link rel="canonical" href="https://yoursite.com/services/insurance-follow-up" />
+        <link rel="canonical" href="https://the-connections.com/services/insurance-follow-up" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

@@ -198,7 +198,7 @@ const QualityReviews = () => {
         <title>Quality Reviews & Audits | Healthcare Chart Audits | HEDIS Compliance</title>
         <meta name="description" content="Expert healthcare quality review services including chart audits, coding validation, HEDIS measures, and compliance assessments. Improve quality scores and ensure regulatory compliance." />
         <meta name="keywords" content={locationKeywords.join(", ")} />
-        <link rel="canonical" href="https://www.apexmbs.com/services/quality-reviews" />
+        <link rel="canonical" href="https://the-connections.com/services/quality-reviews" />
         <script type="application/ld+json">
           {JSON.stringify(serviceSchema)}
         </script>

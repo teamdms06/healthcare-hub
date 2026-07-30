@@ -127,7 +127,7 @@ const DenialManagement = () => {
         <title>Denial Management Services | Medical Billing Revenue Recovery</title>
         <meta name="description" content="Expert denial management services to recover lost revenue, appeal denied claims, and prevent future denials. Maximize your healthcare practice's reimbursements." />
         <meta name="keywords" content="denial management, medical billing denials, claim appeals, revenue recovery, healthcare billing, denied claims" />
-        <link rel="canonical" href="https://yoursite.com/services/denial-management" />
+        <link rel="canonical" href="https://the-connections.com/services/denial-management" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

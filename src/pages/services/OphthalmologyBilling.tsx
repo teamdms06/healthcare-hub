@@ -27,7 +27,7 @@ const OphthalmologyBilling = () => (
       <title>Ophthalmology Billing Services in New York, USA, Texas, Pennsylvania, California, Florida</title>
       <meta name="description" content="Expert ophthalmology billing services in New York, USA, Texas, Pennsylvania, California, and Florida. Eye care billing and coding specialists." />
       <meta name="keywords" content={locationKeywords.join(", ")} />
-      <link rel="canonical" href="https://your-domain.com/services/ophthalmology-billing" />
+      <link rel="canonical" href="https://the-connections.com/services/ophthalmology-billing" />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",

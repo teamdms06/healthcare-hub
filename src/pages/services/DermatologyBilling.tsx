@@ -23,7 +23,7 @@ const DermatologyBilling = () => (
       <title>Dermatology Billing Services in USA, New York</title>
       <meta name="description" content="Expert dermatology billing specialist in the USA, best dermatology billing specialist, dermatology medical billing in New York, and payment solutions." />
       <meta name="keywords" content={locationKeywords.join(", ")} />
-      <link rel="canonical" href="https://your-domain.com/services/dermatology-billing" />
+      <link rel="canonical" href="https://the-connections.com/services/dermatology-billing" />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",

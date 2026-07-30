@@ -60,7 +60,7 @@ const DentalBilling = () => {
         <meta name="keywords" content={locationKeywords.join(", ")} />
         <link
           rel="canonical"
-          href="https://www.The Connections.com/services/dental-billing"
+          href="https://the-connections.com/services/dental-billing"
         />
         <script type="application/ld+json">
           {JSON.stringify({

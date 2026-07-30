@@ -154,7 +154,7 @@ const MentalHealthBilling = () => {
     provider: {
       "@type": "Organization",
       name: "The Connections",
-      url: "https://your-domain.com"
+      url: "https://the-connections.com"
     }
   };
 
@@ -173,7 +173,7 @@ const MentalHealthBilling = () => {
         <meta name="keywords" content={locationKeywords.join(", ")} />
         <link
           rel="canonical"
-          href="https://your-domain.com/services/mental-health-billing"
+          href="https://the-connections.com/services/mental-health-billing"
         />
 
         <script

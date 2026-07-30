@@ -33,7 +33,7 @@ const GastroenterologyBilling = () => (
       <title>Gastroenterology Billing Services in USA, New York</title>
       <meta name="description" content="Expert gastroenterology billing services in the USA, best GI billing in New York, GI billing and coding companies." />
       <meta name="keywords" content={locationKeywords.join(", ")} />
-      <link rel="canonical" href="https://your-domain.com/services/gastroenterology-billing" />
+      <link rel="canonical" href="https://the-connections.com/services/gastroenterology-billing" />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",

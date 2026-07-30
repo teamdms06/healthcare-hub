@@ -61,6 +61,7 @@ import Thanks from "./pages/Thanks";
 import MentalHealthBilling from "./pages/services/MentalHealthBilling";
 import DentalBilling from "./pages/services/DentalBilling";
 import OptometryBilling from "./pages/services/OptometryBilling";
+import RouteSEO from "./components/RouteSEO";
 
 const queryClient = new QueryClient();
 
@@ -71,6 +72,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <RouteSEO />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/what-we-do" element={<WhatWeDo />} />
